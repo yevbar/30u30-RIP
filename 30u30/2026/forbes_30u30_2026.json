@@ -1,0 +1,3032 @@
+{
+  "sports": [
+    {
+      "age": "21",
+      "title": "TENNIS PLAYER, WTA TOUR",
+      "name": "Coco Gauff"
+    },
+    {
+      "age": "22",
+      "title": "PITCHER, TEXAS TECH UNIVERSITY",
+      "name": "NiJaree Canady"
+    },
+    {
+      "age": "29",
+      "title": "QUARTERBACK, BUFFALO BILLS",
+      "name": "Josh Allen"
+    },
+    {
+      "age": "28",
+      "title": "RUNNING BACK, PHILADELPHIA EAGLES",
+      "name": "Saquon Barkley"
+    },
+    {
+      "age": "23",
+      "title": "CENTER, INDIANA FEVER",
+      "name": "Aliyah Boston"
+    },
+    {
+      "age": "27",
+      "title": "DIRECTOR OF WOMEN'S BASKETBALL, LIFT SPORTS MANAGEMENT",
+      "name": "Dorian Branch"
+    },
+    {
+      "age": "24",
+      "title": "GUARD, DALLAS WINGS",
+      "name": "Paige Bueckers"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, CLUB GIRL GOLF",
+      "name": "Katie Calderon"
+    },
+    {
+      "age": "27",
+      "title": "HIGH DIVER, CANADIAN NATIONAL TEAM",
+      "name": "Molly Carlson"
+    },
+    {
+      "age": "29",
+      "title": "OFFENSIVE COORDINATOR, CHICAGO BEARS",
+      "name": "Declan Doyle"
+    },
+    {
+      "age": "27",
+      "title": "GUARD, OKLAHOMA CITY THUNDER",
+      "name": "Shai Gilgeous-Alexander"
+    },
+    {
+      "age": "28, 27",
+      "title": "COFOUNDERS, TRAINWELL",
+      "name": "Gabe Madonna, Matt Spettel"
+    },
+    {
+      "age": "28",
+      "title": "DIRECTOR OF BASEBALL CARDS, MEMORABILIA AND EQUIPMENT, MLB PLAYERS INC.",
+      "name": "Alex Goodman"
+    },
+    {
+      "age": "28",
+      "title": "SENIOR MANAGER OF DOMESTIC MEDIA DISTRIBUTION STRATEGY, NBA",
+      "name": "Bernadette Grant"
+    },
+    {
+      "age": "28",
+      "title": "SENIOR DIRECTOR OF BRAND MARKETING, EXCEL SPORTS MANAGEMENT",
+      "name": "Johnna Hayward"
+    },
+    {
+      "age": "27",
+      "title": "QUARTERBACK, PHILADELPHIA EAGLES",
+      "name": "Jalen Hurts"
+    },
+    {
+      "age": "21",
+      "title": "FIGURE SKATER, TEAM USA",
+      "name": "Ilia Malinin"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, WOMEN'S ELITE RUGBY",
+      "name": "Hallie Martin"
+    },
+    {
+      "age": "28",
+      "title": "CENTER, TORONTO MAPLE LEAFS",
+      "name": "Auston Matthews"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, ALMA PADEL",
+      "name": "Abigail McCulloch"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, CAMB.AI",
+      "name": "Akshat Prakash"
+    },
+    {
+      "age": "27",
+      "title": "GENERAL MANAGER, CHICAGO FIRE FC",
+      "name": "Zayne M. Thomajan"
+    },
+    {
+      "age": "26, 25, 28, 25",
+      "title": "COFOUNDERS, ONECOURT",
+      "name": "Antyush Bollini, Andrew Buckingham, Nick Durand, Jerred Mace"
+    },
+    {
+      "age": "24",
+      "title": "ROCK CLIMBER, TEAM USA",
+      "name": "Brooke Raboutou"
+    },
+    {
+      "age": "23",
+      "title": "FORWARD, WASHINGTON SPIRIT",
+      "name": "Trinity Rodman"
+    },
+    {
+      "age": "27",
+      "title": "RIGHT FIELDER, NEW YORK METS",
+      "name": "Juan Soto"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, CPX PICKLEBALL",
+      "name": "Kyle Sulkar"
+    },
+    {
+      "age": "22",
+      "title": "FOUNDER, SWIFT HOCKEY",
+      "name": "Zechariah Thomas"
+    },
+    {
+      "age": "29",
+      "title": "OFFENSIVE COORDINATOR, JACKSONVILLE JAGUARS",
+      "name": "Grant Udinski"
+    },
+    {
+      "age": "21",
+      "title": "CENTER, SAN ANTONIO SPURS",
+      "name": "Victor Wembanyama"
+    }
+  ],
+  "music": [
+    {
+      "age": "25",
+      "title": "MUSICIAN",
+      "name": "Alex Warren"
+    },
+    {
+      "age": "27",
+      "title": "MUSICIAN",
+      "name": "Doechii"
+    },
+    {
+      "age": "22",
+      "title": "FOUNDER, VITALIZE PROJECTS",
+      "name": "Stephanie Agathis"
+    },
+    {
+      "age": "29",
+      "title": "AGENT, CREATIVE ARTISTS AGENCY",
+      "name": "Kate Arenson"
+    },
+    {
+      "age": "23",
+      "title": "MUSICIAN",
+      "name": "Eddie Benjamin"
+    },
+    {
+      "age": "28",
+      "title": "MUSICIAN",
+      "name": "Rebecca Black"
+    },
+    {
+      "age": "19",
+      "title": "MUSICIAN",
+      "name": "Grace Bowers"
+    },
+    {
+      "age": "26",
+      "title": "DJ",
+      "name": "Disco Lines"
+    },
+    {
+      "age": "27, 27",
+      "title": "DJS, FORESTER",
+      "name": "Alexander Carlson, David Parris"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, TUNEHATCH",
+      "name": "Christal Hector"
+    },
+    {
+      "age": "23",
+      "title": "MUSICIAN",
+      "name": "Benson Boone"
+    },
+    {
+      "age": "26",
+      "title": "MUSICIAN",
+      "name": "Ravyn Lenae"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, SEE YOU LATER",
+      "name": "TJ Hoover"
+    },
+    {
+      "age": "28",
+      "title": "HEAD OF GLOBAL STRATEGY, DARKROOM RECORDS",
+      "name": "Oliver Jordan"
+    },
+    {
+      "age": "26",
+      "title": "MUSICIAN",
+      "name": "Ella Langley"
+    },
+    {
+      "age": "28",
+      "title": "MUSICIAN",
+      "name": "Jensen McRae"
+    },
+    {
+      "age": "28",
+      "title": "PRESIDENT OF A&R, LYRICAL LEMONADE",
+      "name": "Jake Millan"
+    },
+    {
+      "age": "29",
+      "title": "SVP & HEAD OF VIRAL MARKETING, WARNER RECORDS",
+      "name": "Will Morrow"
+    },
+    {
+      "age": "21",
+      "title": "MUSICIAN",
+      "name": "Jessie Murph"
+    },
+    {
+      "age": "18",
+      "title": "MUSICIAN",
+      "name": "Ty Myers"
+    },
+    {
+      "age": "28",
+      "title": "LEAD SINGER, FUERZA REGIDA",
+      "name": "Jesús Ortiz Paz"
+    },
+    {
+      "age": "26",
+      "title": "MUSICIAN",
+      "name": "Audrey Hobert"
+    },
+    {
+      "age": "27",
+      "title": "DIRECTOR, PRICING & TICKETING, WASSERMAN MUSIC",
+      "name": "Oskar Müller"
+    },
+    {
+      "age": "26",
+      "title": "MUSICIAN",
+      "name": "Audrey Nuna"
+    },
+    {
+      "age": "29",
+      "title": "MUSICIAN",
+      "name": "Role Model"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, GIRLS WHO LISTEN",
+      "name": "Kadijat Salawudeen"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, OPEN DOOR MANAGEMENT",
+      "name": "Dylan Shanks"
+    },
+    {
+      "age": "28",
+      "title": "MUSIC SUPERVISOR, NATIONAL FOOTBALL LEAGUE",
+      "name": "Joshua Sutherland"
+    },
+    {
+      "age": "26",
+      "title": "MUSICIAN",
+      "name": "UMI"
+    },
+    {
+      "age": "25",
+      "title": "MUSICIAN",
+      "name": "Bailey Zimmerman"
+    }
+  ],
+  "media": [
+    {
+      "age": "28, 29",
+      "title": "COFOUNDERS, KREA",
+      "name": "Victor Perez, Diego Rodriguez Prado"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, ENJOY BASKETBALL",
+      "name": "Kentrell Beecham"
+    },
+    {
+      "age": "28",
+      "title": "AUTHOR",
+      "name": "Bel Banta"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, RICH LITTLE BROKEGIRLS",
+      "name": "Kimberly Bizu"
+    },
+    {
+      "age": "26",
+      "title": "VIDEO PRODUCER, BOARDROOM",
+      "name": "Audrey Blackmore"
+    },
+    {
+      "age": "27",
+      "title": "SENIOR PUBLICIST, W W NORTON AND",
+      "name": "Fanta Diallo"
+    },
+    {
+      "age": "27",
+      "title": "DIRECTOR OF PODCAST & DIGITAL CONTENT, THERAPY FOR BLACK GIRLS",
+      "name": "Ellice Ellis"
+    },
+    {
+      "age": "26",
+      "title": "COHOST, PROF G MARKETS",
+      "name": "Ed Elson"
+    },
+    {
+      "age": "22",
+      "title": "WRITER, THE NEW YORK TIMES",
+      "name": "Evan Gorelick"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, ALO MEDIA",
+      "name": "Anne Marie Hagerty"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, NEWSREEL",
+      "name": "Jack Brewster"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, TRADEMARKED",
+      "name": "Tariro Makoni"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, THAT GOOD SH*T",
+      "name": "Annabelle Kline-Zilles"
+    },
+    {
+      "age": "28",
+      "title": "PARTNER, NEW MEDIA, ANDREESSEN HOROWITZ",
+      "name": "Brent Liang"
+    },
+    {
+      "age": "25, 26, 26",
+      "title": "COFOUNDERS, LIFE ON FILM",
+      "name": "Christian Baiocco, Griffin Katz, Grant Weintrob"
+    },
+    {
+      "age": "29, 28, 29",
+      "title": "COFOUNDERS, LIT GIRL",
+      "name": "Tara Larsen, Ashleigh Magee, Riley Vaske"
+    },
+    {
+      "age": "29",
+      "title": "ANCHOR, KOMO SEATTLE",
+      "name": "Tyrah Majors"
+    },
+    {
+      "age": "28",
+      "title": "SENIOR WRITER, BILLBOARD",
+      "name": "Heran Mamo"
+    },
+    {
+      "age": "28, 29, 29",
+      "title": "COFOUNDERS, MUTUALS MEDIA",
+      "name": "Amelia Montooth, Roman Papademetriou, Emmet Sandberg"
+    },
+    {
+      "age": "29",
+      "title": "VIDEO PRODUCER, THE WALL STREET JOURNAL",
+      "name": "Farah Otero-Amad"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, THE PARNAS PERSPECTIVE",
+      "name": "Aaron Parnas"
+    },
+    {
+      "age": "27",
+      "title": "AUTHOR",
+      "name": "Eli Rallo"
+    },
+    {
+      "age": "26, 28, 27",
+      "title": "COFOUNDERS, PARALLEL",
+      "name": "Simon Chasalow, Antonio Palou-Garcia, Alex Peterson"
+    },
+    {
+      "age": "28",
+      "title": "AUTHOR",
+      "name": "Ruben Reyes Jr."
+    },
+    {
+      "age": "29, 29",
+      "title": "COFOUNDERS, STFU",
+      "name": "Val Parker, Andrea Popova"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, NXTGEN AGENCY",
+      "name": "Gabriella Suliga"
+    },
+    {
+      "age": "28",
+      "title": "SENIOR PRODUCER AND CREATIVE DIRECTOR, NASA",
+      "name": "James Tralie"
+    },
+    {
+      "age": "27",
+      "title": "EDITOR-IN-CHIEF, NOWTHIS",
+      "name": "Michael Vito Valentino"
+    },
+    {
+      "age": "25, 26",
+      "title": "COFOUNDERS, WELCOME.JPEG",
+      "name": "Jake McEvoy, Alexander Sarkissov"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, YOUR WORLD ENTERPRISES",
+      "name": "Isis Young"
+    }
+  ],
+  "ai": [
+    {
+      "age": "28",
+      "title": "COFOUNDER, DECAGON",
+      "name": "Jesse Zhang"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, LEGORA",
+      "name": "Max Junestrand"
+    },
+    {
+      "age": "26, 25",
+      "title": "COFOUNDERS, BOLTZ",
+      "name": "Gabriele Corso, Saro Passaro"
+    },
+    {
+      "age": "25, 25",
+      "title": "COFOUNDERS, BROWSER USE",
+      "name": "Magnus Müller, Gregor Zunic"
+    },
+    {
+      "age": "21, 21",
+      "title": "COFOUNDERS, DELVE",
+      "name": "Karun Kaushik, Selin Kocalar"
+    },
+    {
+      "age": "28, 25, 28",
+      "title": "COFOUNDERS, FARSIGHT",
+      "name": "Samir Dutta, Noah Faro, Kunal Tangri"
+    },
+    {
+      "age": "27, 27, 27",
+      "title": "COFOUNDERS, FINNY",
+      "name": "Theodore Janson, Eden Ovadia, Victoria Toli"
+    },
+    {
+      "age": "26",
+      "title": "MEMBER OF TECHNICAL STAFF, OPENAI",
+      "name": "Isa Fulford"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, RUNE TECHNOLOGIES",
+      "name": "Peter Goldsborough"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, INKEEP",
+      "name": "Nick Gomez"
+    },
+    {
+      "age": "24",
+      "title": "FOUNDER, AXIOM",
+      "name": "Carina Hong"
+    },
+    {
+      "age": "24, 24",
+      "title": "COFOUNDERS, ACCORDANCE",
+      "name": "Finsam Samson, David Yue"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, UNIFY",
+      "name": "Connor Heggie"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, TENSORWAVE",
+      "name": "Darrick Horton"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, RANGER",
+      "name": "Josh Ip"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, FASTINO",
+      "name": "Ash Lewis"
+    },
+    {
+      "age": "20",
+      "title": "FOUNDER, FOLIA TECHNOLOGIES",
+      "name": "Grace Magny-Fokam"
+    },
+    {
+      "age": "25, 25",
+      "title": "COFOUNDERS, MINTLIFY",
+      "name": "Hahnbee Lee, Han Wang"
+    },
+    {
+      "age": "25, 28",
+      "title": "COFOUNDERS, MOONLAKE AI",
+      "name": "Sharon Lee, Fan-Yun Sun"
+    },
+    {
+      "age": "26, 24",
+      "title": "COFOUNDERS, NOVA INTELLIGENCE",
+      "name": "Emma Qian, Samuel Yang"
+    },
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, DAVID AI",
+      "name": "Tomer Cohen, Ben Wiley"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, SONANT AI",
+      "name": "Alejandrina Gonzalez Reyes"
+    },
+    {
+      "age": "26, 27",
+      "title": "COFOUNDERS, PARAFORM",
+      "name": "John (Jung Woo) Kim, Jeffery Li"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, UNDETECTABLE AI",
+      "name": "Christian Perry"
+    },
+    {
+      "age": "28, 29, 29",
+      "title": "COFOUNDERS, PYLON",
+      "name": "Advith Chelikani, Robert Eng, Marty Kausas"
+    },
+    {
+      "age": "26, 23",
+      "title": "COFOUNDERS, REDUCTO",
+      "name": "Adit Abraham, Raunak Chowdhuri"
+    },
+    {
+      "age": "25",
+      "title": "COFOUNDER, UTOPAI STUDIOS",
+      "name": "Cecilia Shen"
+    },
+    {
+      "age": "23, 26",
+      "title": "COFOUNDERS, THE INTERACTION COMPANY OF CALIFORNIA",
+      "name": "Felix Schlegel, Marvin von Hagen"
+    },
+    {
+      "age": "26, 26",
+      "title": "COFOUNDERS, VAPI",
+      "name": "Jordan Dearsley, Nikhil Gupta"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, LETTA",
+      "name": "Sarah Wooders"
+    }
+  ],
+  "finance": [
+    {
+      "age": "28, 26",
+      "title": "COFOUNDERS, KOBALT LABS",
+      "name": "Ashi Agrawal, Kalyani Ramadurgam"
+    },
+    {
+      "age": "24, 24",
+      "title": "COFOUNDERS, SLASH",
+      "name": "Kevin Bai, Victor Cardenas"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, BURNT XION",
+      "name": "Anthony Anzalone"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, METHOD FINANCIAL",
+      "name": "Jose Bethancourt"
+    },
+    {
+      "age": "27",
+      "title": "SENIOR ASSOCIATE, BLACKSTONE",
+      "name": "Brandon Buell"
+    },
+    {
+      "age": "29",
+      "title": "VICE PRESIDENT, INVESTMENTS, HARBOURVIEW EQUITY PARTNERS",
+      "name": "Briana Carter"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, R0 CAPITAL",
+      "name": "Miles Cole"
+    },
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, FEATHERY",
+      "name": "Peter Dun, Zack Khan"
+    },
+    {
+      "age": "27",
+      "title": "ASSOCIATE, KKR",
+      "name": "Bradlee Few"
+    },
+    {
+      "age": "27",
+      "title": "INVESTOR, COATUE",
+      "name": "Nicholas Gagnet"
+    },
+    {
+      "age": "27",
+      "title": "TRADER, CITADEL",
+      "name": "Arkin Gupta"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR OF SPECIAL SITUATIONS, TEXAS MUNICIPAL RETIREMENT SYSTEM",
+      "name": "Annika Kim"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, ESCAPE VELOCITY (EV3)",
+      "name": "Salvador Gala"
+    },
+    {
+      "age": "27, 29",
+      "title": "COFOUNDERS, HANOVER PARK",
+      "name": "Chris Hladczuk, Nick Puljic"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, OPTIMISM",
+      "name": "Ben Jones"
+    },
+    {
+      "age": "29",
+      "title": "PORTFOLIO MANAGER, MILLENNIUM MANAGEMENT",
+      "name": "Paul Lee"
+    },
+    {
+      "age": "28",
+      "title": "VICE PRESIDENT, MORGAN STANLEY",
+      "name": "Gabrielle Lewis"
+    },
+    {
+      "age": "25",
+      "title": "INVESTOR, TPG CAPITAL",
+      "name": "Kristofer Madu"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, ESCALERA CAPITAL",
+      "name": "Bobby Magee"
+    },
+    {
+      "age": "28, 27, 27",
+      "title": "COFOUNDERS, MOMENT",
+      "name": "Dean Hathout, Dylan Parker, Ammer Soliman"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, PRIVY",
+      "name": "Asta Li"
+    },
+    {
+      "age": "26, 27, 27",
+      "title": "COFOUNDERS, ROGO",
+      "name": "Tumas Rackaitis, Gabriel Stengel, John Willett"
+    },
+    {
+      "age": "29, 29",
+      "title": "COFOUNDERS, NUVO",
+      "name": "Sid Malladi, Rameez Remsudeen"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, PLUME",
+      "name": "Theodore Pornprinya"
+    },
+    {
+      "age": "28",
+      "title": "VICE PRESIDENT, GOLDMAN SACHS",
+      "name": "Camila Solis-Camara"
+    },
+    {
+      "age": "29, 29",
+      "title": "COFOUNDERS, SYNCRACY CAPITAL",
+      "name": "Daniel Cheung, Ryan Watkins"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, AGORA",
+      "name": "Nick van Eck"
+    },
+    {
+      "age": "23",
+      "title": "FOUNDER, OCTANE",
+      "name": "Giovanni Vignone"
+    },
+    {
+      "age": "28, 28, 28, 28",
+      "title": "COFOUNDERS, WHITE LION CAPITAL",
+      "name": "Dmitriy Slobodskiy Jr, Yash Thukral, Sam Yaffa, Nathan Yee"
+    },
+    {
+      "age": "29",
+      "title": "PRINCIPAL, BC PARTNERS",
+      "name": "Yejin Yeoum"
+    }
+  ],
+  "social-media": [
+    {
+      "age": "19",
+      "title": "CREATOR",
+      "name": "Katie Fang"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR",
+      "name": "Nicholas Campbell"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR",
+      "name": "Achieng Agutu"
+    },
+    {
+      "age": "27",
+      "title": "CREATOR",
+      "name": "Sylvester Brewster"
+    },
+    {
+      "age": "24",
+      "title": "CREATOR",
+      "name": "Leana Deeb"
+    },
+    {
+      "age": "25",
+      "title": "CREATOR",
+      "name": "Eloise Dufka"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR",
+      "name": "Sam Eckholm"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR",
+      "name": "Brandon Edelman"
+    },
+    {
+      "age": "24",
+      "title": "CREATOR",
+      "name": "Leilani Green"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, BY HOLGUIN",
+      "name": "Eduardo Holguin Martinez"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR",
+      "name": "Xyla Foxlin"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, PUBLIC OPINION",
+      "name": "Henry Kornaros"
+    },
+    {
+      "age": "26",
+      "title": "CREATOR",
+      "name": "Leah Kateb"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR OF BRAND MARKETING, MATCH GROUP",
+      "name": "Cindy Ji Won Lim"
+    },
+    {
+      "age": "22, 23",
+      "title": "CREATORS, MAKENZIE AND MALIA",
+      "name": "Makenzie Fowler, Malia Fowler"
+    },
+    {
+      "age": "26",
+      "title": "CREATOR",
+      "name": "Joe Mele"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, CPM GLOBAL",
+      "name": "Chelsea Miller"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, WUZG00D",
+      "name": "Alani Noelle"
+    },
+    {
+      "age": "24",
+      "title": "CREATOR",
+      "name": "Alex Ojeda"
+    },
+    {
+      "age": "23",
+      "title": "CREATOR",
+      "name": "Jessica Ortiz"
+    },
+    {
+      "age": "24",
+      "title": "FOUNDER, APPSTINENCE",
+      "name": "Gabriela Nguyen"
+    },
+    {
+      "age": "23",
+      "title": "FOUNDER, NEXTGEN ACCESSIBILITY INITIATIVE",
+      "name": "Alexandra Wong"
+    },
+    {
+      "age": "24",
+      "title": "CREATOR",
+      "name": "Clarke Peoples"
+    },
+    {
+      "age": "26",
+      "title": "CREATOR",
+      "name": "Jonathan Peter"
+    },
+    {
+      "age": "22",
+      "title": "FOUNDER, EP JEWELS",
+      "name": "Evangelina Petrakis"
+    },
+    {
+      "age": "28",
+      "title": "CREATOR",
+      "name": "Monica Ravichandran"
+    },
+    {
+      "age": "25",
+      "title": "CREATOR",
+      "name": "Hailey Sani"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR",
+      "name": "Eric Sedeno"
+    },
+    {
+      "age": "28",
+      "title": "CREATOR",
+      "name": "Anna Sitar"
+    },
+    {
+      "age": "27",
+      "title": "CREATOR",
+      "name": "Heidi Wong"
+    }
+  ],
+  "retail-ecommerce": [
+    {
+      "age": "28",
+      "title": "FOUNDER, ALTA",
+      "name": "Jenny Wang"
+    },
+    {
+      "age": "29, 29",
+      "title": "COFOUNDERS, FAZIT BEAUTY",
+      "name": "Aliett Buttelman, Nina La Bruna"
+    },
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, APRICOTTON",
+      "name": "Chloe Beaudoin, Jessica Miao"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, PERSEVE HAIR",
+      "name": "Olivia Bae"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, HEMPRESS HYGIENICS",
+      "name": "Marilyn Califano"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, PUPSENTIALS",
+      "name": "Jake Chambers"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, NOBLESIP",
+      "name": "Tudor Chirau"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, FANBASIS",
+      "name": "Yash Daftary"
+    },
+    {
+      "age": "24",
+      "title": "FOUNDER, ACE GRIP SOCKS",
+      "name": "Elisabeth Detrow"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, HAPPY CAMP3R",
+      "name": "Stephanie Devli"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, SACHEU BEAUTY",
+      "name": "Sarah Cheung"
+    },
+    {
+      "age": "28, 28",
+      "title": "COFOUNDERS, PINPOINT",
+      "name": "Joshua Cohen, Justin Krokoff"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, PRESSED FLORAL",
+      "name": "Sarah Ebert"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, REDIEM",
+      "name": "Sarah Ganzenmuller"
+    },
+    {
+      "age": "23",
+      "title": "COFOUNDER, PHIA",
+      "name": "Phoebe Gates"
+    },
+    {
+      "age": "28, 27, 28",
+      "title": "COFOUNDERS, GLASSPASS",
+      "name": "Sam Abdallah, Benjamin Burton, Riley McDonnell"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, THE DAILEE",
+      "name": "Sophie Hengst"
+    },
+    {
+      "age": "26, 28",
+      "title": "COFOUNDERS, HOPPN",
+      "name": "Bridger Hart, Carson Hart"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, NOU",
+      "name": "Alexia Ioannou"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, LUXCONCIERGE",
+      "name": "Arya Keshavarzian"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, DAIRY BOY",
+      "name": "Paige Lorenze"
+    },
+    {
+      "age": "26, 27",
+      "title": "COFOUNDERS, SWIFTSKU",
+      "name": "Daniel Mazur, Mit Patel"
+    },
+    {
+      "age": "25, 22",
+      "title": "COFOUNDERS, KREPLING",
+      "name": "Liam Gerada, Travis Gerada"
+    },
+    {
+      "age": "24",
+      "title": "FOUNDER, TWO FOLD GROUP",
+      "name": "Jae Seung Lee"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, CORVANE",
+      "name": "Onanma Okeke"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, LITTLE ELF PRODUCTS",
+      "name": "Bryan Perla"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, ABBODE",
+      "name": "Abigail Price"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, HERD",
+      "name": "Ajar Rajbhandary"
+    },
+    {
+      "age": "28",
+      "title": "HEAD OF DESIGN AND MARKETING, STREETS AHEAD",
+      "name": "Ruth Sack"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, MATTEO PARFUMS",
+      "name": "Matthew J. Sánchez"
+    }
+  ],
+  "energy-green-tech": [
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, MAVERICK",
+      "name": "Jesse Evans, Eric Herrera"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, ALGA BIOSCIENCES",
+      "name": "Daria Balatsky"
+    },
+    {
+      "age": "26, 28",
+      "title": "COFOUNDERS, AIRBUILD",
+      "name": "John Bucur, David Gory"
+    },
+    {
+      "age": "24",
+      "title": "COFOUNDER, TERRANOVA",
+      "name": "Laurence Allen"
+    },
+    {
+      "age": "25",
+      "title": "PH.D. STUDENT, CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "name": "Jennifer Berry"
+    },
+    {
+      "age": "24, 25, 25",
+      "title": "COFOUNDERS, CLEANR",
+      "name": "David Dillman, Chip Miller, Max Pennington"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, OLEO",
+      "name": "Gabriella Dweck"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, VESTA",
+      "name": "Kelly Erhart"
+    },
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, FNN",
+      "name": "Caroline Comeau, Tamas Kereszy"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, ASTRO ENERGY",
+      "name": "Alex Fuster"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, FUSE",
+      "name": "JC Btaiche"
+    },
+    {
+      "age": "25, 24",
+      "title": "COFOUNDERS, REVERSE ENERGY SOLUTIONS",
+      "name": "Chao Hu, Vickie Wen"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, QUANTUM FORMATICS",
+      "name": "Jason Gibson"
+    },
+    {
+      "age": "24",
+      "title": "FOUNDER, HADRON ENERGY",
+      "name": "Samuel Gibson"
+    },
+    {
+      "age": "28",
+      "title": "PH.D. CANDIDATE, STANFORD UNIVERSITY",
+      "name": "Rebecca Grekin"
+    },
+    {
+      "age": "28",
+      "title": "POSTDOCTORAL RESEARCHER, UNIVERSITY OF CHICAGO",
+      "name": "Yuan Liu"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, MAFIX",
+      "name": "Jade Marcus"
+    },
+    {
+      "age": "27, 26",
+      "title": "COFOUNDERS, MARITIME FUSION",
+      "name": "Justin Cohen, Jason Kaufmann"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, WATTAIR",
+      "name": "Joseph Mooney"
+    },
+    {
+      "age": "23, 25",
+      "title": "COFOUNDERS, NECTAR",
+      "name": "Katherine He, Allen Wang"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, VALAR ATOMICS",
+      "name": "Isaiah Taylor"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, SPLIGHT",
+      "name": "Thomas Vadora"
+    },
+    {
+      "age": "29, 28",
+      "title": "COFOUNDERS, REWBI",
+      "name": "Thomas Marge, Derek Modzelewski"
+    },
+    {
+      "age": "26, 26",
+      "title": "COFOUNDERS, RSTREAM",
+      "name": "Ian Goodine, Ethan Walko"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, VOX AERIS",
+      "name": "Selene Sari"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, TRUEMETER",
+      "name": "Ali Sarilgan"
+    },
+    {
+      "age": "29, 26",
+      "title": "COFOUNDERS, SESAME SUSTAINABILITY",
+      "name": "Jim Owens, Paul Sizaire"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, CAPACITECH ENERGY",
+      "name": "Joe Sleppy"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, RAYA POWER",
+      "name": "Meghan Wood"
+    },
+    {
+      "age": "24",
+      "title": "COFOUNDER, CARBONBRIDGE",
+      "name": "Sophia Xu"
+    }
+  ],
+  "manufacturing-industry": [
+    {
+      "age": "29",
+      "title": "FOUNDER, STRELLA",
+      "name": "Katherine Sizov"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, MORPHOAI",
+      "name": "Ayna Arora"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, NEXTSET MATERIALS",
+      "name": "Yasmeen Alfaraj"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, REEF ARCHES",
+      "name": "Nicholas Bourdon"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, VERUSTRUCT",
+      "name": "Nick Callegari"
+    },
+    {
+      "age": "26, 29",
+      "title": "COFOUNDERS, CRAITOR",
+      "name": "Meher Akhil Birlangi, Eric Shnell"
+    },
+    {
+      "age": "29, 26",
+      "title": "COFOUNDERS, DIODE COMPUTERS",
+      "name": "Davide Asnaghi, Lenny Khazan"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, NEXTERITY",
+      "name": "Lindsey Elliott"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, CANDID INTELLIGENCE",
+      "name": "Talha Faiz"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, SENSORY ROBOTICS",
+      "name": "Tristan Fogt"
+    },
+    {
+      "age": "28, 29",
+      "title": "COFOUNDERS, RAISE ROBOTICS",
+      "name": "Gary Chen, Conley Oster"
+    },
+    {
+      "age": "26, 26",
+      "title": "COFOUNDERS, ZEON SYSTEMS",
+      "name": "Tahir D'Mello, Brontë Kolar"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, HARDLINE",
+      "name": "Karly Heffernan"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, NOX METALS",
+      "name": "Zane Hengsperger"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, COSMIC ROBOTICS",
+      "name": "Lewis Jones"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, FARM TO FLAME ENERGY",
+      "name": "KJ Jyamfi"
+    },
+    {
+      "age": "29, 28",
+      "title": "COFOUNDERS, K1 SEMICONDUCTOR",
+      "name": "Xella Doi, Connor Horn"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, CARDINAL ROBOTICS",
+      "name": "Anand Lalwani"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, OUROS MATERIALS",
+      "name": "Teresa Liu"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, IRONGRID",
+      "name": "Fern Morrison"
+    },
+    {
+      "age": "23",
+      "title": "FOUNDER, CRABI ROBOTICS",
+      "name": "Levi Gershon"
+    },
+    {
+      "age": "21, 19",
+      "title": "COFOUNDERS, SOLCOA INDUSTRIES",
+      "name": "Artem Iurkovskyi, Hooman Reza Nezhad"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, ATOME",
+      "name": "Alexander O'Brien"
+    },
+    {
+      "age": "27, 26",
+      "title": "COFOUNDERS, OPTIGON",
+      "name": "Brandon Motes, Anthony Troupe"
+    },
+    {
+      "age": "26, 29",
+      "title": "COFOUNDERS, PAVE ROBOTICS",
+      "name": "Josh Kelly, Mason Landon Smith"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, MACROCYCLE TECHNOLOGIES",
+      "name": "Stwart Peña Feliz"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, CONTINUUM INFRASTRUCTURE SOLUTIONS",
+      "name": "Nooralhuda Saleh"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, FLOWCELLUTIONS",
+      "name": "Becca Segel"
+    },
+    {
+      "age": "27, 28, 27, 28",
+      "title": "COFOUNDERS, SOARCE",
+      "name": "Matthew Jaeger, Patrick Michel, Mason Mincey, Derek Saltzman"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, BRIGHTLIGHT PHOTONICS",
+      "name": "Joshua Yang"
+    }
+  ],
+  "healthcare": [
+    {
+      "age": "25, 26",
+      "title": "COFOUNDERS, ASEPHA",
+      "name": "Can Uncu, Eunice Wu"
+    },
+    {
+      "age": "28, 28",
+      "title": "COFOUNDERS, INTERO BIOSYSTEMS",
+      "name": "Charlie Childs, Madeline Eiken"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, METRI BIO",
+      "name": "Ashley Abel"
+    },
+    {
+      "age": "29",
+      "title": "M.D. CANDIDATE, DARTMOUTH",
+      "name": "Syed Rakin Ahmed"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, ARLO",
+      "name": "Karthik Bhaskara"
+    },
+    {
+      "age": "25, 28",
+      "title": "COFOUNDERS, BRELLIUM",
+      "name": "Henry Kasa, Zach Rosen"
+    },
+    {
+      "age": "25",
+      "title": "COFOUNDER, ASTEK DIAGNOSTICS",
+      "name": "Courtney Cavin"
+    },
+    {
+      "age": "28",
+      "title": "ASSISTANT PROFESSOR, UNIVERSITY OF CALIFORNIA, BERKELEY",
+      "name": "Serina Chang"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, REEV",
+      "name": "Amaury Ciurana"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, ZEST HEALTH",
+      "name": "Olivia Deitcher"
+    },
+    {
+      "age": "29, 26",
+      "title": "COFOUNDERS, MANDOLIN",
+      "name": "Rohit Rustagi, Will Yin"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, HUBLY SURGICAL",
+      "name": "Casey Qadir"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, SYRINA THERAPEUTICS",
+      "name": "Francesca Ferraresso"
+    },
+    {
+      "age": "27",
+      "title": "M.D. CANDIDATE, NORTHWESTERN UNIVERSITY",
+      "name": "Jonathan Huang"
+    },
+    {
+      "age": "29, 28",
+      "title": "COFOUNDERS, ILLUMINANT SURGICAL",
+      "name": "James Hu, Jhoneldrick Millares"
+    },
+    {
+      "age": "29",
+      "title": "ASSISTANT PROFESSOR, SYRACUSE UNIVERSITY",
+      "name": "Andrea Joseph"
+    },
+    {
+      "age": "26, 25",
+      "title": "COFOUNDERS, KNOWTEX",
+      "name": "Jocelyn Kang, Caroline Zhang"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, UPLIFT HOSPICE",
+      "name": "Owen Lawrie"
+    },
+    {
+      "age": "28",
+      "title": "POSTDOCTORAL RESEARCHER, UNIVERSITY OF CHICAGO",
+      "name": "Pengju Li"
+    },
+    {
+      "age": "29",
+      "title": "PH.D. CANDIDATE, STANFORD UNIVERSITY",
+      "name": "Kevin Liu"
+    },
+    {
+      "age": "28, 28",
+      "title": "COFOUNDERS, ASSORT HEALTH",
+      "name": "Jeffery Liu, Jon Wang"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, NUDGE",
+      "name": "Jeremy Barenholtz"
+    },
+    {
+      "age": "27, 26",
+      "title": "COFOUNDERS, NABI",
+      "name": "Rachel Fong, Sonny Mo"
+    },
+    {
+      "age": "29",
+      "title": "GENERAL SURGERY RESIDENT PHYSICIAN, US ARMY",
+      "name": "Bradley Pierce"
+    },
+    {
+      "age": "24",
+      "title": "M.D./PH.D. CANDIDATE, HARVARD MEDICAL SCHOOL",
+      "name": "Arya Rao"
+    },
+    {
+      "age": "29",
+      "title": "GENERAL SURGERY RESIDENT PHYSICIAN, MASSACHUSETTS GENERAL HOSPITAL",
+      "name": "Sara Sakowitz"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, NU LEAF MENTAL HEALTH GROUP",
+      "name": "Alexander Sanchez"
+    },
+    {
+      "age": "25, 28",
+      "title": "COFOUNDERS, SUPERPOWER",
+      "name": "Max Marchione, Kevin Unkrich"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, SHAMIRI INSTITUTE",
+      "name": "Katherine Venturo-Conerly"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, EXACARE AI",
+      "name": "Benjamin Willox"
+    }
+  ],
+  "art-style": [
+    {
+      "age": "29",
+      "title": "FOUNDER, CYKLAR",
+      "name": "Claudia Sulewski"
+    },
+    {
+      "age": "27",
+      "title": "ARTIST",
+      "name": "Sasha Gordon"
+    },
+    {
+      "age": "26",
+      "title": "ARTIST",
+      "name": "Sophia-Yemisi Adeyemo"
+    },
+    {
+      "age": "20, 20",
+      "title": "COFOUNDERS, ATANGA TWINS",
+      "name": "Carlsen Atanga, Curtis Atanga"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, TSL COLLECTION",
+      "name": "Nicole Axelson"
+    },
+    {
+      "age": "23",
+      "title": "PHOTOGRAPHER",
+      "name": "Cassidy Chen"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, THE CLEARLY COLLECTIVE",
+      "name": "Olivia Cleary"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, STRAWBERRY MILK MOB",
+      "name": "Georgia Costello"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, KALMA ART FOUNDATION",
+      "name": "Kimberly Ann Cruz"
+    },
+    {
+      "age": "28",
+      "title": "READY TO WEAR DIRECTOR, SILVIA TCHERASSI",
+      "name": "Sofia Espinosa Tcherassi"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, HAUTELEMODE",
+      "name": "Luke Meagher"
+    },
+    {
+      "age": "29",
+      "title": "ARTIST",
+      "name": "Kat Tsai"
+    },
+    {
+      "age": "26",
+      "title": "PHOTOGRAPHER",
+      "name": "Cole Ferguson"
+    },
+    {
+      "age": "23",
+      "title": "PHOTOGRAPHER",
+      "name": "Denise Hewitt"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, THE AGENCY ART HOUSE",
+      "name": "Arushi Kapoor"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, THE TURMERIC TIMES",
+      "name": "Teya Kepila"
+    },
+    {
+      "age": "27",
+      "title": "ARTIST",
+      "name": "Leondre Lattimore"
+    },
+    {
+      "age": "26",
+      "title": "ARTIST",
+      "name": "Emily Manwaring"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, LEAU",
+      "name": "Gia Mezz"
+    },
+    {
+      "age": "27",
+      "title": "ARTIST",
+      "name": "Mayowa Nwadike"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, MASSILLON STUDIOS",
+      "name": "Emmanuel Massillon"
+    },
+    {
+      "age": "24",
+      "title": "PRINCIPAL DANCER, AMERICAN BALLET THEATRE",
+      "name": "Chloe Misseldine"
+    },
+    {
+      "age": "26, 26",
+      "title": "COFOUNDERS, PRIV.Y CREATIVE",
+      "name": "Noah Berghammer, Lane Kimbro"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, NUDESOX",
+      "name": "Leila Quraishi"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, VERTIGO",
+      "name": "Taylor Sade"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, LE ALFRÉ",
+      "name": "Brandon Snower"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, CARLY JORDAN",
+      "name": "Carly Stern"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, PEDRO TRONCOSO STUDIO",
+      "name": "Pedro Troncoso"
+    },
+    {
+      "age": "29",
+      "title": "INTERIOR DESIGNER",
+      "name": "Marco Zamora"
+    },
+    {
+      "age": "29",
+      "title": "ARTIST",
+      "name": "Danlin Zhang"
+    }
+  ],
+  "hollywood-entertainment": [
+    {
+      "age": "22",
+      "title": "ACTOR",
+      "name": "Anna Cathcart"
+    },
+    {
+      "age": "25",
+      "title": "ACTOR",
+      "name": "Chase Infiniti"
+    },
+    {
+      "age": "29, 28",
+      "title": "COFOUNDERS, ANNO",
+      "name": "Brent Assayag, Sydny Furuichi"
+    },
+    {
+      "age": "29",
+      "title": "MOTION PICTURE LITERARY AGENT, CREATIVE ARTISTS AGENCY (CAA)",
+      "name": "Kelly Berger"
+    },
+    {
+      "age": "25",
+      "title": "ACTOR",
+      "name": "Marissa Bode"
+    },
+    {
+      "age": "27",
+      "title": "ACTOR",
+      "name": "Christopher Briney"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR OF DEVELOPMENT, FILM & TV, NOVEL",
+      "name": "Julia Bromberg"
+    },
+    {
+      "age": "20",
+      "title": "ARTIST",
+      "name": "Miles Caton"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, NOCTAL",
+      "name": "Isaiah Chavous"
+    },
+    {
+      "age": "29",
+      "title": "CEO, AMBIENCE STUDIO",
+      "name": "Minye Cho"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, DJL PRODUCTIONS",
+      "name": "David Lynch"
+    },
+    {
+      "age": "26",
+      "title": "ACTOR",
+      "name": "Mikey Madison"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, ASIANS IN ANIMATION",
+      "name": "Lexie Chu"
+    },
+    {
+      "age": "25",
+      "title": "ACTOR",
+      "name": "Aulii Cravalho"
+    },
+    {
+      "age": "29",
+      "title": "COMEDY TOURING AGENT, WME",
+      "name": "Grace Goldstein"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, PAPER BOX",
+      "name": "Wesley Goodrich"
+    },
+    {
+      "age": "28",
+      "title": "COMEDIAN",
+      "name": "Abhinaya Govindan"
+    },
+    {
+      "age": "26",
+      "title": "ACTOR",
+      "name": "Jack Innanen"
+    },
+    {
+      "age": "29",
+      "title": "PLAYWRIGHT, JERSEY GIRL PRODUCTIONS",
+      "name": "Alex Lin"
+    },
+    {
+      "age": "27",
+      "title": "ACTOR",
+      "name": "Keyla Monterroso Mejia"
+    },
+    {
+      "age": "28",
+      "title": "VICE PRESIDENT, FILM, BLACK BEAR",
+      "name": "Clementine Quittner"
+    },
+    {
+      "age": "23",
+      "title": "ACTOR",
+      "name": "Lola Tung"
+    },
+    {
+      "age": "29",
+      "title": "HEAD OF PROGRAMS, COALITION OF ASIAN PACIFICS IN ENTERTAINMENT",
+      "name": "Rhian Moore"
+    },
+    {
+      "age": "23",
+      "title": "ACTOR",
+      "name": "Emma Myers"
+    },
+    {
+      "age": "26",
+      "title": "DIRECTOR OF FINANCE AND STRATEGY, BLEECKER STREET MEDIA",
+      "name": "Rachel Orbach"
+    },
+    {
+      "age": "27",
+      "title": "ACTOR",
+      "name": "Lovie Simone"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, BREAKING THE BINARY THEATRE",
+      "name": "George Strus"
+    },
+    {
+      "age": "25",
+      "title": "ACTOR",
+      "name": "Sophie Thatcher"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, MIXED MEDIA",
+      "name": "Jordan Tortorello"
+    },
+    {
+      "age": "26",
+      "title": "WRITER",
+      "name": "Auguste White"
+    }
+  ],
+  "education": [
+    {
+      "age": "25",
+      "title": "FOUNDER, THE RUNDOWN",
+      "name": "Rowan Cheung"
+    },
+    {
+      "age": "23, 22",
+      "title": "COFOUNDERS, STUDYFETCH",
+      "name": "Esan Durrani, Ryan Trattner"
+    },
+    {
+      "age": "17",
+      "title": "FOUNDER, MODEL UN ACADEMY",
+      "name": "Momin Ahmed"
+    },
+    {
+      "age": "27, 28, 28",
+      "title": "COFOUNDERS, ALTEREA",
+      "name": "Anahita Dalmia, Jasper McEvoy, Alexander Whitover"
+    },
+    {
+      "age": "29",
+      "title": "PRINCIPAL PRODUCT MANAGER, KHAN ACADEMY",
+      "name": "Isabel Andrade"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, READ ON YOUR OWN (ROYO)",
+      "name": "Yasmin Barkett"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, WIZ LEARNING",
+      "name": "Kyla Bolden"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, ENLIGHTAPP",
+      "name": "Dieumerci Christel"
+    },
+    {
+      "age": "27, 26",
+      "title": "COFOUNDERS, CORAL AI",
+      "name": "Rajya Atluri, Matt Figdore"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, AVANI SERVICES",
+      "name": "Natasha Cox"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, CLASSBANK",
+      "name": "Abby Coyle"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, ASCENT AUTISM",
+      "name": "Faraz Fadavi"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, CCRPS",
+      "name": "Amareen Dhaliwal"
+    },
+    {
+      "age": "29",
+      "title": "ASSOCIATE DIRECTOR, POLICY, CENTRE FOR MEDIA, TECHNOLOGY AND DEMOCRACY",
+      "name": "Helen Hayes"
+    },
+    {
+      "age": "26, 29",
+      "title": "COFOUNDERS, JUICEMIND",
+      "name": "Ryan Dehmoubed, Philippe Rivard"
+    },
+    {
+      "age": "28, 26",
+      "title": "COFOUNDERS, JUNGLE",
+      "name": "Julian Alvarez, David Glass"
+    },
+    {
+      "age": "24, 24",
+      "title": "COFOUNDERS, KOLLEGIO",
+      "name": "Senan Khawaja, Saeed Naeem"
+    },
+    {
+      "age": "18",
+      "title": "EDUCATION POLICY ADVOCATE",
+      "name": "Sophia Lin"
+    },
+    {
+      "age": "21",
+      "title": "FOUNDER, ULTIMATE IVY LEAGUE GUIDE",
+      "name": "Elise Pham"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, GOSU ACADEMY",
+      "name": "Braeden Plein"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, REDVEST",
+      "name": "Anya Ozmen"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, CHOMPSHOP",
+      "name": "Kausi Raman"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, SPARK FOUNDATION",
+      "name": "Rochelle Prasad"
+    },
+    {
+      "age": "29, 28",
+      "title": "COFOUNDERS, RECESS",
+      "name": "Michael Pauleen, Benjamin Somers"
+    },
+    {
+      "age": "29",
+      "title": "CONTENT CREATOR",
+      "name": "Colin Rocker"
+    },
+    {
+      "age": "27, 26",
+      "title": "COFOUNDERS, START:EMPOWERMENT",
+      "name": "Kier Blake, Alexia Leclercq"
+    },
+    {
+      "age": "22, 22",
+      "title": "COFOUNDERS, TEACHSHARE",
+      "name": "Aryan Bhadouria, Adam Goldstein"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, EDUAIDE.AI",
+      "name": "Thomas Thompson"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, SELLINGSARA",
+      "name": "Sara Uy"
+    }
+  ],
+  "social-impact": [
+    {
+      "age": "23",
+      "title": "COFOUNDER, RE-EARTH INITIATIVE",
+      "name": "Xiye Bastida"
+    },
+    {
+      "age": "29, 29",
+      "title": "COFOUNDERS, REFIBERD",
+      "name": "Sarika Bajaj, Tushita Gupta"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, KIBU",
+      "name": "Daniel Caridi"
+    },
+    {
+      "age": "27, 28",
+      "title": "COFOUNDERS, COUNTER FIN",
+      "name": "Camron Brown, Kaelaan Maynor"
+    },
+    {
+      "age": "22",
+      "title": "COFOUNDER, YOUTH250",
+      "name": "Alex Edgar"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, RE:WILD YOUR CAMPUS",
+      "name": "Mackenzie Feldman"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, REFER",
+      "name": "Andre Hamra"
+    },
+    {
+      "age": "23",
+      "title": "FOUNDER, YOUTH OVER GUNS",
+      "name": "Luis Hernandez"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, THE MV3 FOUNDATION",
+      "name": "Ashley Kyalwazi"
+    },
+    {
+      "age": "26, 27",
+      "title": "COFOUNDERS, MIGRATE MATE",
+      "name": "Mihailo Bozic, Dylan Gibbs"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, VARA SAFETY",
+      "name": "Timothy Oh"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, JOHN'S CRAZY SOCKS",
+      "name": "John Cronin"
+    },
+    {
+      "age": "27, 24",
+      "title": "COFOUNDERS, MILAMEND",
+      "name": "Lucas Labelle, Mila Magnani"
+    },
+    {
+      "age": "28",
+      "title": "DIRECTOR OF GEN INVEST, GLOBAL ENTREPRENEURSHIP NETWORK",
+      "name": "Alejandra Molina"
+    },
+    {
+      "age": "26, 28",
+      "title": "COFOUNDERS, ORDO",
+      "name": "Lucas Kuzak, Sheila Nicolin"
+    },
+    {
+      "age": "25",
+      "title": "COFOUNDER, IMPACT FOOD",
+      "name": "Kelly Pan"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, COSIGN",
+      "name": "Zach Schofel"
+    },
+    {
+      "age": "21, 22",
+      "title": "COFOUNDERS, SERIES",
+      "name": "Sean Hargrow, Nathaneo Johnson"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, KOI HEALTH",
+      "name": "Nur Shafiqah Shahirah"
+    },
+    {
+      "age": "26, 28",
+      "title": "COFOUNDERS, STUDENT BASIC NEEDS COALITION",
+      "name": "Paige Swanstein, Owen Tanner-Flomberg"
+    },
+    {
+      "age": "24",
+      "title": "COFOUNDER, SOTIRA",
+      "name": "Amrita Bhasin"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, WATERLILY",
+      "name": "Lily Vittayarukskul"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, PROJECT EMBRACE",
+      "name": "Mohan Sudabattula"
+    },
+    {
+      "age": "27, 25",
+      "title": "COFOUNDERS, THE COMMUNITY GROCER",
+      "name": "Alexandre Imbot, Eli Moraru"
+    },
+    {
+      "age": "22, 25",
+      "title": "COFOUNDERS, TREEAGE",
+      "name": "Kathryn Gioiosa, Shiv Soin"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, THE ALLIANCE FOR LONGEVITY INITIATIVES",
+      "name": "Dylan Venezia Livingston"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, BLACK SISTERS IN STEM",
+      "name": "Nyamekye Wilson"
+    },
+    {
+      "age": "22, 22",
+      "title": "COFOUNDERS, YOUNG PEOPLE'S ALLIANCE",
+      "name": "Sam Hiner, Michael Mick Tobin"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, TRANSCRYPTS",
+      "name": "Zain Zaidi"
+    },
+    {
+      "age": "20",
+      "title": "FOUNDER, CANCER KIDS FIRST",
+      "name": "Olivia Zhang"
+    }
+  ],
+  "transportation-aerospace": [
+    {
+      "age": "29",
+      "title": "COFOUNDER, FLUX MARINE",
+      "name": "Jonathan Lord"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, AERO NEXTGEN",
+      "name": "Monica Badra"
+    },
+    {
+      "age": "24",
+      "title": "PH.D. STUDENT, UNIVERSITY OF MICHIGAN",
+      "name": "Sinan Abdulhak"
+    },
+    {
+      "age": "28, 25",
+      "title": "COFOUNDERS, CURO CHARGING",
+      "name": "Andrew Porter, Kieran White"
+    },
+    {
+      "age": "27, 26, 26",
+      "title": "COFOUNDERS, DISTRIBUTED SPECTRUM",
+      "name": "Ben Harpe, Isaac Struhl, Alex Wulff"
+    },
+    {
+      "age": "24, 23",
+      "title": "COFOUNDERS, DOORSTEP",
+      "name": "Shashwat Murarka, Sheel Patel"
+    },
+    {
+      "age": "29",
+      "title": "TECHNICAL LEAD MANAGER, WAYMO",
+      "name": "Anne Dorsey"
+    },
+    {
+      "age": "28",
+      "title": "GNC ENGINEER, SPACEX",
+      "name": "Skylar Eiskowitz"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR OF PRODUCT, NASA",
+      "name": "Ashika Gopalkrishnan"
+    },
+    {
+      "age": "22, 23, 22",
+      "title": "COFOUNDERS, GUARDIAN RF",
+      "name": "John Andrzejewski, Eli Kerstein, Lucas Raskin"
+    },
+    {
+      "age": "27, 28, 28, 27",
+      "title": "COFOUNDERS, MACH9",
+      "name": "Alexander Baikovitz, Michael Mong, Haowen Shi, Zachary Sussman"
+    },
+    {
+      "age": "22",
+      "title": "COFOUNDER, ONTLA",
+      "name": "Victoria de León"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, DRUMKIT",
+      "name": "Dhruv Gupta"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, BURQ",
+      "name": "Salman Habib"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, ALBACORE",
+      "name": "John Huddleston"
+    },
+    {
+      "age": "22, 22",
+      "title": "COFOUNDERS, HYBRON",
+      "name": "Aaron Guo, Brennan Lieu"
+    },
+    {
+      "age": "29",
+      "title": "ENGINEERING GROUP MANAGER, GLOBAL VIRTUAL ENGINEERING",
+      "name": "Rachel Hysong"
+    },
+    {
+      "age": "29",
+      "title": "SENIOR MANAGER, GOVERNMENT LASERCOM PRODUCTS, AMAZON LEO",
+      "name": "Joshua Ingersoll"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, SALIENT MOTION",
+      "name": "Vishaal Mali"
+    },
+    {
+      "age": "25, 25",
+      "title": "COFOUNDERS, POSEIDON AEROSPACE",
+      "name": "Parker Tenney, David Zagaynov"
+    },
+    {
+      "age": "28",
+      "title": "RESEARCH SCIENTIST, NASA JOHNSON SPACE CENTER",
+      "name": "Morgan Stosic"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, AEON",
+      "name": "Naweed Tahmas"
+    },
+    {
+      "age": "28, 28, 28",
+      "title": "COFOUNDERS, RED LAB LOGISTICS",
+      "name": "Nicholas Macuch, Addison Miles, Tobias Skarke"
+    },
+    {
+      "age": "25, 26",
+      "title": "COFOUNDERS, REDITUS SPACE",
+      "name": "Stef Crum, Will Sherman"
+    },
+    {
+      "age": "21, 23",
+      "title": "COFOUNDERS, ROVE",
+      "name": "Arhan Chhabra, Max Morganroth"
+    },
+    {
+      "age": "20",
+      "title": "FOUNDER, APOLINK",
+      "name": "Onkar Singh"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, HYPERKELP",
+      "name": "Costas Soler"
+    },
+    {
+      "age": "24, 24",
+      "title": "COFOUNDERS, STEINMETZ",
+      "name": "Owen Brake, Ethan Childerhose"
+    },
+    {
+      "age": "26, 28, 26, 29",
+      "title": "COFOUNDERS, ULYSSES",
+      "name": "Colm O'Brien, Will O'Brien, Akhil Voorakkara, Jamie Wedderburn"
+    },
+    {
+      "age": "29",
+      "title": "CHIEF EXPERIENCE OFFICER, YELLOW DIAMOND LOGISTICS",
+      "name": "Hannah Wilson"
+    }
+  ],
+  "games": [
+    {
+      "age": "27",
+      "title": "CREATOR, EMIRU",
+      "name": "Emily Schunk"
+    },
+    {
+      "age": "24",
+      "title": "CEO, KESTREL STUDIOS",
+      "name": "Ana Aguilar"
+    },
+    {
+      "age": "29",
+      "title": "DIGITAL PRODUCT MANAGER, WIZARDS OF THE COAST",
+      "name": "Amanda Asofsky"
+    },
+    {
+      "age": "27",
+      "title": "CREATOR OPERATIONS LEAD, RESPAWN ENTERTAINMENT",
+      "name": "Michelle Cheng"
+    },
+    {
+      "age": "29",
+      "title": "PRODUCT MANAGER, NETFLIX",
+      "name": "Keanu Concepcion"
+    },
+    {
+      "age": "28",
+      "title": "GAME DESIGNER, DESPELOTE",
+      "name": "julian cordero"
+    },
+    {
+      "age": "29, 28, 29",
+      "title": "COFOUNDERS, DARK MACHINE GAMES",
+      "name": "John (Jack) Folkner, Holly Jencka, Ian Steagall"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, EVOLVED",
+      "name": "Sebastien Delvaux"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, MILHOUSE",
+      "name": "Evan Downey"
+    },
+    {
+      "age": "23",
+      "title": "PRO ESPORTS PLAYER, SHOPIFY REBELLION",
+      "name": "Alexis Guarrasi"
+    },
+    {
+      "age": "26",
+      "title": "PRINCIPAL ENGINEER, BACKBONE",
+      "name": "Rohan Kapur"
+    },
+    {
+      "age": "24",
+      "title": "CREATOR, TENZ",
+      "name": "Tyson Ngo"
+    },
+    {
+      "age": "29",
+      "title": "PRINCIPAL, GRIFFIN GAMING PARTNERS",
+      "name": "Ibrahim Hafeez"
+    },
+    {
+      "age": "25",
+      "title": "COFOUNDER, ATLAS CREATIVE",
+      "name": "Jordan Holland"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, CAGE STUDIOS",
+      "name": "Salaar Kohari"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, XEN GAMING",
+      "name": "Jordan Lazarus"
+    },
+    {
+      "age": "27",
+      "title": "SENIOR SOFTWARE ENGINEER, RIOT GAMES",
+      "name": "Hollis Lehv"
+    },
+    {
+      "age": "28",
+      "title": "DIRECTOR OF GROWTH, CARRY1ST",
+      "name": "Spencer Ma"
+    },
+    {
+      "age": "25",
+      "title": "SENIOR WRITER, BUNGIE",
+      "name": "Ashley Poprik"
+    },
+    {
+      "age": "28",
+      "title": "VOICE AND PERFORMANCE DIRECTOR, FREELANCE",
+      "name": "Holly Reddaway"
+    },
+    {
+      "age": "29",
+      "title": "PRODUCT DESIGN DIRECTOR, DUOLINGO",
+      "name": "Yudi Sun"
+    },
+    {
+      "age": "18",
+      "title": "FOUNDER, AUDEMY",
+      "name": "Crystal Yang"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, COLDBLOOD",
+      "name": "Isadora Rodopoulos"
+    },
+    {
+      "age": "27",
+      "title": "GROWTH OPERATIONS, META",
+      "name": "Francisco Rodriguez"
+    },
+    {
+      "age": "29",
+      "title": "SENIOR GLOBAL COMMUNITY AND MARKETING LEAD, AMAZON GAMES",
+      "name": "Roxanne Sabo"
+    },
+    {
+      "age": "29",
+      "title": "AGENT, UNITED TALENT AGENCY",
+      "name": "Judah Silver"
+    },
+    {
+      "age": "28",
+      "title": "LEAD PRODUCER, FIRAXIS GAMES",
+      "name": "Rachel Sima"
+    },
+    {
+      "age": "28",
+      "title": "TECHNICAL PRODUCER, JAM CITY",
+      "name": "Emily Sorger"
+    },
+    {
+      "age": "27",
+      "title": "STRATEGY DIRECTOR, ZONED",
+      "name": "Jagdish Whitten"
+    },
+    {
+      "age": "29",
+      "title": "CREATOR, SPRINGSIMS",
+      "name": "Stephen Works"
+    }
+  ],
+  "food-drink": [
+    {
+      "age": "25, 26",
+      "title": "COFOUNDERS, SAUZ",
+      "name": "Winston Alfieri, Troy Bonde"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, MAGIC TECHNOLOGIES",
+      "name": "Maggie Tang"
+    },
+    {
+      "age": "28, 28",
+      "title": "COFOUNDERS, ALLDAY",
+      "name": "Mohand Khouider, Chaim Winerman"
+    },
+    {
+      "age": "26, 25",
+      "title": "COFOUNDERS, BENNY",
+      "name": "Paige Cey, Julie Letizia"
+    },
+    {
+      "age": "25, 25",
+      "title": "COFOUNDERS, BITESIGHT",
+      "name": "Lucious McDaniel IV, Zac Schulwolf"
+    },
+    {
+      "age": "24, 18, 18",
+      "title": "COFOUNDERS, CAL AI",
+      "name": "Blake Anderson, Henry Langmack, Zach Yadegari"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, WHINY BABY",
+      "name": "Jess Druey"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, IRIS FINANCE",
+      "name": "Drew Fallon"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, ROTTEN",
+      "name": "Michael Fisher"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, HELADOS LA AZTECA",
+      "name": "Eduardo Garcia"
+    },
+    {
+      "age": "24, 24",
+      "title": "COFOUNDERS, PROTEIN PINTS",
+      "name": "Michael Meadows, Paul Reiss"
+    },
+    {
+      "age": "24",
+      "title": "CREATOR",
+      "name": "Tineke Tini Younger"
+    },
+    {
+      "age": "27",
+      "title": "CREATOR",
+      "name": "Jack Goldburg"
+    },
+    {
+      "age": "24, 23, 23",
+      "title": "COFOUNDERS, HNY+",
+      "name": "Liam Brogan, Ross Cooley, Luke Smialowicz"
+    },
+    {
+      "age": "25, 26",
+      "title": "COFOUNDERS, LIL SWEET TREAT",
+      "name": "Elly Ross, Jack Ross"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, LEISURE HYDRATION",
+      "name": "Alex Michaelsen"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, CLASS ACT RESTAURANT AND NIGHTCAP SPEAKEASY",
+      "name": "Nicolai Mlodinow"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, MIZO",
+      "name": "Holly Paul"
+    },
+    {
+      "age": "29, 29, 29",
+      "title": "COFOUNDERS, PLATTER",
+      "name": "Kieran Derfus, Michael Keenehan, Ben Sharf"
+    },
+    {
+      "age": "28",
+      "title": "CO-OWNER, BAR NEXT DOOR",
+      "name": "Kara Rosenblum"
+    },
+    {
+      "age": "28, 29",
+      "title": "COFOUNDERS, SEEQ",
+      "name": "Hannah Perez, Ben Zaver"
+    },
+    {
+      "age": "29",
+      "title": "HEAD CHEF, MITA",
+      "name": "Miguel Guerra"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, LQD ASSETS",
+      "name": "Morgan Salsman"
+    },
+    {
+      "age": "24",
+      "title": "FOUNDER, BANGERS SNACKS",
+      "name": "Phillip Tran"
+    },
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, TRANSCENDENCE COFFEE",
+      "name": "Mitalee Bharadwaj, Lisa Yala"
+    },
+    {
+      "age": "24, 25",
+      "title": "COFOUNDERS, TRIPLE CANNABIS BEVERAGES",
+      "name": "Lambo Perkins, Will Spartin"
+    },
+    {
+      "age": "25, 25, 25",
+      "title": "CO-OWNERS, UTOPIA BAGELS",
+      "name": "Jesse Spellman, Angelo Tsoulos, Jimmy Tsoulos"
+    },
+    {
+      "age": "27",
+      "title": "COFOUNDER, SETT",
+      "name": "Matthew Wan"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, FEEL GOODS",
+      "name": "Brian Wong"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER, CORPSE REVIVER",
+      "name": "Anna Zesbaugh"
+    }
+  ],
+  "science": [
+    {
+      "age": "22, 25",
+      "title": "COFOUNDERS, ICARUS ROBOTICS",
+      "name": "Ethan Barajas, Jamie Palmer"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, HUMIMIC BIOSYSTEMS",
+      "name": "Alexis Applequist"
+    },
+    {
+      "age": "19, 18",
+      "title": "COFOUNDERS, BINDWELL",
+      "name": "Navvye Anand, Tyler Rose"
+    },
+    {
+      "age": "28",
+      "title": "SENIOR RESEARCH CHEMIST, 3M",
+      "name": "Nicholas Boynton"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTORAL RESEARCHER, MASSACHUSETTS INSTITUTE OF TECHNOLOGY AND BOSTON CHILDREN'S HOSPITAL",
+      "name": "Yihang Chen"
+    },
+    {
+      "age": "25, 28",
+      "title": "COFOUNDERS, CONDUCTOR QUANTUM",
+      "name": "Joel Pendleton, Brandon Severin"
+    },
+    {
+      "age": "25",
+      "title": "FOUNDER, ACORN GENETICS",
+      "name": "Ana Cornell"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTORAL RESEARCHER, STANFORD UNIVERSITY",
+      "name": "Yahao Dai"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTORAL RESEARCHER, UNIVERSITY OF CALIFORNIA, BERKELEY",
+      "name": "Katherine Forbes"
+    },
+    {
+      "age": "28",
+      "title": "PH.D. CANDIDATE, MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "name": "Jessica Fry"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, RADICAL AI",
+      "name": "Joseph Krause"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, ATOMICS",
+      "name": "Dana Biechele-Speziale"
+    },
+    {
+      "age": "29",
+      "title": "PH.D. CANDIDATE, UNIVERSITY OF CALIFORNIA, SAN DIEGO",
+      "name": "Mengzhou Hu"
+    },
+    {
+      "age": "27",
+      "title": "PH.D. CANDIDATE, HARVARD UNIVERSITY",
+      "name": "Raphael Kay"
+    },
+    {
+      "age": "29",
+      "title": "RESEARCH SCIENTIST, BIOHUB",
+      "name": "Claire Liu"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, NORTHWOOD SPACE",
+      "name": "Shaurya Luthra"
+    },
+    {
+      "age": "21, 21",
+      "title": "COFOUNDERS, MABLAB",
+      "name": "Skye Lam, Vienna Sparks"
+    },
+    {
+      "age": "28",
+      "title": "PRINCIPAL INVESTIGATOR, ARC INSTITUTE",
+      "name": "Uche Medoh"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTORAL RESEARCHER, MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "name": "Emily Pass"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTORAL RESEARCHER, HARVARD MEDICAL SCHOOL",
+      "name": "Duy Phan"
+    },
+    {
+      "age": "21, 25, 26",
+      "title": "COFOUNDERS, ATUM WORKS",
+      "name": "Matteo Kimura, Lucas Pabarcius, Malcolm Tisdale"
+    },
+    {
+      "age": "26",
+      "title": "INCOMING ASSISTANT PROFESSOR, UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN",
+      "name": "Minduli Wijayatunga"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, REBORNC",
+      "name": "Mark Robertson"
+    },
+    {
+      "age": "24, 23, 27",
+      "title": "COFOUNDERS, ROWAN",
+      "name": "Eli Mann, Arien Wagen, Corin Wagen"
+    },
+    {
+      "age": "28",
+      "title": "COFOUNDER, CURA",
+      "name": "Sabrina Scott"
+    },
+    {
+      "age": "29",
+      "title": "M.D./PH.D. CANDIDATE, UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+      "name": "Alice Tang"
+    },
+    {
+      "age": "29",
+      "title": "RESEARCH SCIENTIST, CARNEGIE OBSERVATORIES",
+      "name": "Shreyas Vissapragada"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTOR RESEARCHER, GENENTECH",
+      "name": "Sevahn Vorperian"
+    },
+    {
+      "age": "25",
+      "title": "INCOMING ASSISTANT PROFESSOR, MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "name": "Kyra Yap"
+    },
+    {
+      "age": "29",
+      "title": "POSTDOCTORAL RESEARCHER, JOHNS HOPKINS UNIVERSITY",
+      "name": "Yining Zhu"
+    }
+  ],
+  "marketing-advertising": [
+    {
+      "age": "24, 24",
+      "title": "COFOUNDERS, POSH",
+      "name": "Avante Price, Eli Taylor-Lemire"
+    },
+    {
+      "age": "28, 26",
+      "title": "COFOUNDERS, WKNDHRS",
+      "name": "Gabriel Adzich, Adam Rodriguez"
+    },
+    {
+      "age": "27, 27",
+      "title": "COFOUNDERS, AGENCY EIGHT",
+      "name": "Alex Ashton, Aurielle Kaminski"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, WORDBREW",
+      "name": "Georgia Austin"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, PROPELLIC",
+      "name": "Brennen Bliss"
+    },
+    {
+      "age": "28",
+      "title": "MARKETING DESIGN MANAGER, SEATTLE SEAHAWKS",
+      "name": "Donny Brock"
+    },
+    {
+      "age": "29",
+      "title": "IP MARKETING LEAD, MUSICOW",
+      "name": "Terenze Coleman"
+    },
+    {
+      "age": "29",
+      "title": "SENIOR DIRECTOR, BRAND PARTNERSHIPS, CONDE NAST",
+      "name": "Alexandra Cooney"
+    },
+    {
+      "age": "28",
+      "title": "HEAD OF BRAND ENGAGEMENT, PERSONAL DAY",
+      "name": "Bianca Fernandez"
+    },
+    {
+      "age": "25",
+      "title": "CMO, TOP TIER TRAVEL",
+      "name": "Olivia Ferney"
+    },
+    {
+      "age": "28, 25",
+      "title": "COFOUNDERS, RHEA CREATIVE",
+      "name": "Kiersten Barbara, Quinn McCormick"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, SEVENTH HOUSE MARKETING",
+      "name": "Christy Lee"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, VAN ETTEN",
+      "name": "Molly Hall"
+    },
+    {
+      "age": "23",
+      "title": "FOUNDER, PEBBLE",
+      "name": "Lauren Huttner"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, PARTNERSMARTER",
+      "name": "Kaitlin Kahler"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, STUDIO JUNE",
+      "name": "Brooke McGee"
+    },
+    {
+      "age": "29",
+      "title": "PRESIDENT, MURDER HORNET",
+      "name": "Alexandra McInnis"
+    },
+    {
+      "age": "22",
+      "title": "FOUNDER, XPHERA",
+      "name": "JohnGabriel Nguyen-Truong"
+    },
+    {
+      "age": "28",
+      "title": "VP, MARKETING, REMEDY SCIENCE",
+      "name": "Allen Ortega"
+    },
+    {
+      "age": "29, 26, 27, 27",
+      "title": "COFOUNDERS, RELLA",
+      "name": "Natalie Barbu, Natacha Bomparte, Connor Boyce, Nick Kane"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR, GROWTH, SKIMS",
+      "name": "Scott Lloyd"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR, BRAND MARKETING, BEIS",
+      "name": "Sydney Thomas"
+    },
+    {
+      "age": "28",
+      "title": "HEAD OF MARKETING, LOCKER",
+      "name": "Mary Grace Scully"
+    },
+    {
+      "age": "23",
+      "title": "STRATEGIC TALENT & COLLABORATION MANAGER, LA KINGS",
+      "name": "Jack Sloane"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, STEELE PR",
+      "name": "Audrey Steele"
+    },
+    {
+      "age": "28, 29",
+      "title": "COFOUNDERS, TAIV",
+      "name": "Jordan Davis, Noah Palansky"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, ODDDUCK MARKETING GROUP",
+      "name": "Brennan Tobin"
+    },
+    {
+      "age": "29",
+      "title": "COFOUNDER, VIEW SOURCE",
+      "name": "Jen Yuan"
+    },
+    {
+      "age": "29",
+      "title": "GLOBAL SVP, BRAND & COMMUNICATIONS, AMIRI",
+      "name": "Nima Zaribaf"
+    }
+  ],
+  "venture-capital": [
+    {
+      "age": "29, 27",
+      "title": "COFOUNDERS, MERIDIAN VENTURES",
+      "name": "Devon Gethers, Karlton Haney"
+    },
+    {
+      "age": "26",
+      "title": "FOUNDER, CARTAN CAPITAL",
+      "name": "Cici Bellis"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDING PARTNER, AJIM CAPITAL",
+      "name": "Eunice Ajim"
+    },
+    {
+      "age": "29",
+      "title": "VICE PRESIDENT, INSIGHT PARTNERS",
+      "name": "Eugenia Bejar"
+    },
+    {
+      "age": "26",
+      "title": "PARTNER, MERITECH CAPITAL",
+      "name": "Tanner Bhonslay"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, DAYDREAM VENTURES",
+      "name": "Jonathan Chang"
+    },
+    {
+      "age": "29",
+      "title": "VICE PRESIDENT, BLACKROCK",
+      "name": "Hassan Chaudhry"
+    },
+    {
+      "age": "27",
+      "title": "FOUNDER, BELIEF CAPITAL",
+      "name": "Kevin Costa"
+    },
+    {
+      "age": "29",
+      "title": "SENIOR INVESTOR, COLLAB CAPITAL",
+      "name": "Baheejah Crumbley"
+    },
+    {
+      "age": "29",
+      "title": "PARTNER, FELICIS",
+      "name": "James Detweiler"
+    },
+    {
+      "age": "29",
+      "title": "VICE PRESIDENT, CAPITALG",
+      "name": "Manmeet Gujral"
+    },
+    {
+      "age": "27",
+      "title": "PARTNER, GREYLOCK",
+      "name": "Sophia Luo"
+    },
+    {
+      "age": "29",
+      "title": "PRINCIPAL, HAYSTACK",
+      "name": "Divya Dhulipala"
+    },
+    {
+      "age": "25",
+      "title": "PARTNER, SEQUOIA CAPITAL",
+      "name": "James Flynn"
+    },
+    {
+      "age": "29",
+      "title": "VICE PRESIDENT, OAK HC/FT",
+      "name": "Maddie Hilal"
+    },
+    {
+      "age": "29",
+      "title": "FOUNDER AND MANAGING PARTNER, ANANSI CAPITAL",
+      "name": "Vinay Iyengar"
+    },
+    {
+      "age": "29",
+      "title": "PARTNER, LOWERCARBON CAPITAL",
+      "name": "Caie Kelley"
+    },
+    {
+      "age": "29",
+      "title": "PRINCIPAL, ICONIQ",
+      "name": "Ryan Koh"
+    },
+    {
+      "age": "26",
+      "title": "PARTNER, BLOCKCHAIN CAPITAL",
+      "name": "Yuan Han Li"
+    },
+    {
+      "age": "29",
+      "title": "INVESTOR, BESSEMER VENTURE PARTNERS",
+      "name": "Grace Ma"
+    },
+    {
+      "age": "28",
+      "title": "PARTNER, BAIN CAPITAL VENTURES",
+      "name": "Abby Meyers"
+    },
+    {
+      "age": "29",
+      "title": "PARTNER, STRIKER VENTURE PARTNERS",
+      "name": "Brian Zhan"
+    },
+    {
+      "age": "28",
+      "title": "PRINCIPAL INVESTOR, MANTIS VC",
+      "name": "Saveena Mandadi"
+    },
+    {
+      "age": "24",
+      "title": "INVESTOR, ACTIVANT CAPITAL",
+      "name": "John Matheson"
+    },
+    {
+      "age": "26",
+      "title": "COFOUNDER, VENTURE GUIDES",
+      "name": "Sage Nye"
+    },
+    {
+      "age": "29",
+      "title": "DIRECTOR OF INCLUSIVE AND SUSTAINABLE VENTURES, MORGAN STANLEY",
+      "name": "Jemimah Orevaoghene"
+    },
+    {
+      "age": "29",
+      "title": "SENIOR ASSOCIATE, 776",
+      "name": "Marlon Primous"
+    },
+    {
+      "age": "27",
+      "title": "INVESTOR, CALIBRATE VENTURES",
+      "name": "Katie Vasquez"
+    },
+    {
+      "age": "29",
+      "title": "PRINCIPAL, FIRSTMARK",
+      "name": "David Waltcher"
+    },
+    {
+      "age": "28",
+      "title": "FOUNDER, PARK RANGERS CAPITAL",
+      "name": "Erica Wenger"
+    }
+  ]
+}
