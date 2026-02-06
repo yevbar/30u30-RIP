@@ -1,0 +1,493 @@
+{
+  "fraud_cases": [],
+  "legal_issues": [
+    {
+      "name": "Carly Cushnie",
+      "year": 2013,
+      "company": "Cushnie et Ochs",
+      "issue": "Lawsuit: Co-founder Michelle Ochs sued the rebranded Cushnie company (Jun 2020) for breach of settlement agreement, claiming $360K+ in unpaid installments after leaving the brand in 2018.",
+      "source": "Page Six, The Fashion Law",
+      "query_used": "\"Carly Cushnie\" \"Cushnie et Ochs\" lawsuit sued bankruptcy",
+      "timestamp": "2026-02-04T11:03:36.834011"
+    },
+    {
+      "name": "Sophia Amoruso",
+      "year": 2013,
+      "company": "Nasty Gal",
+      "issue": "Bankruptcy: Nasty Gal filed Chapter 11 bankruptcy (Nov 2016). Multiple lawsuits from former employees alleging wrongful termination and pregnancy discrimination (2015+). Company sold to Boohoo after bankruptcy.",
+      "source": "Vanity Fair, Forbes, Dazed, TechCrunch",
+      "query_used": "\"Sophia Amoruso\" \"Nasty Gal\" bankruptcy lawsuit sued scandal",
+      "timestamp": "2026-02-04T11:16:52.752894"
+    },
+    {
+      "name": "Leandra Medine",
+      "year": 2013,
+      "company": "Man Repeller",
+      "issue": "Controversy: Stepped down from Man Repeller (Jun 2020) following accusations of racism and lack of diversity in content and employees. Site eventually shut down.",
+      "source": "Daily Mail, Jezebel, Medium",
+      "query_used": "\"Leandra Medine\" \"Man Repeller\" lawsuit sued scandal controversy",
+      "timestamp": "2026-02-04T11:20:41.905106"
+    },
+    {
+      "name": "Ashley & Mary Kate Olsen",
+      "year": 2013,
+      "company": "The Row, Elizabeth and James",
+      "issue": "Lawsuit: Settled unpaid intern class action lawsuit (2015) for $140,000 (2017). Also sued by former executive (2020) for wrongful termination.",
+      "source": "NY Post, Fortune, TMZ, AJC",
+      "query_used": "\"Ashley Olsen\" \"Mary Kate Olsen\" \"The Row\" lawsuit sued bankruptcy",
+      "timestamp": "2026-02-04T11:35:00.000000"
+    },
+    {
+      "name": "Alexander Wang",
+      "year": 2013,
+      "company": "Alexander Wang, Balenciaga",
+      "issue": "Sexual misconduct: Multiple allegations of sexual assault (Dec 2020-Feb 2021) from male models and trans women. Allegations went viral on social media. Lawsuit filed and reportedly settled. Wang issued public apology (Mar 2021).",
+      "source": "BBC, Vanity Fair, The Guardian, People, Business of Fashion, Grazia",
+      "query_used": "\"Alexander Wang\" fashion designer lawsuit sued scandal sexual assault",
+      "timestamp": "2026-02-04T11:38:00.000000"
+    },
+    {
+      "name": "Palmer Luckey",
+      "year": 2013,
+      "company": "Oculus VR",
+      "issue": "Lawsuit: ZeniMax v. Oculus - $500M jury verdict (2017) for NDA violation and trade secret misappropriation. Later cleared of IP theft on appeal (2021).",
+      "source": "Wikipedia, Reddit, ZDNET, Road to VR",
+      "query_used": "\"Palmer Luckey\" \"Oculus\" lawsuit sued controversy scandal",
+      "timestamp": "2026-02-04T19:59:00.000000"
+    },
+    {
+      "name": "Justin Bieber",
+      "year": 2013,
+      "company": "Musician",
+      "issue": "Multiple lawsuits: Settled assault lawsuits with bodyguard (2014) and photographers (2016). Toronto assault charge. Drag race settlement ($50K). Filed $20M defamation suit (2020).",
+      "source": "CNN, BBC, ABC News, ABA Journal, Billboard",
+      "query_used": "\"Justin Bieber\" lawsuit sued arrested charged legal trouble",
+      "timestamp": "2026-02-04T20:01:30.000000"
+    },
+    {
+      "name": "Dwight Howard",
+      "year": 2013,
+      "company": "Los Angeles Lakers",
+      "issue": "Lawsuit: Sexual assault lawsuit filed (2023), dismissed Aug 2024 after plaintiff dropped case. Also child abuse allegations and harassment claims.",
+      "source": "ESPN, CBS Sports, AP News, NYT, The Guardian",
+      "query_used": "\"Dwight Howard\" lawsuit sued legal trouble scandal",
+      "timestamp": "2026-02-04T20:02:00.000000"
+    },
+    {
+      "name": "Evan Spiegel, Bobby Murphy",
+      "year": 2014,
+      "company": "Snapchat",
+      "issue": "Lawsuits: $157.5M settlement with ousted co-founder Reggie Brown (2014) for wrongful removal. Snap settled social media addiction lawsuit (Jan 2026); Spiegel ordered to give depositions in youth harm cases.",
+      "source": "The Guardian, TechCrunch, Forbes, Business Insider, Consumer Notice",
+      "query_used": "\"Evan Spiegel\" \"Snapchat\" lawsuit sued legal",
+      "timestamp": "2026-02-04T23:10:00.000000"
+    },
+    {
+      "name": "Sean Rad, Justin Mateen",
+      "year": 2014,
+      "company": "Tinder",
+      "issue": "Lawsuits: Whitney Wolfe sexual harassment lawsuit (2014) led to Mateen's suspension as CMO. Co-founders sued Match/IAC for $2B+ claiming undervaluation (2018). Rad faced sexual assault accusations and filed defamation countersuit (2019).",
+      "source": "BBC, NPR, CNBC, LA Times, Forbes, NY Magazine",
+      "query_used": "\"Sean Rad\" \"Justin Mateen\" \"Tinder\" lawsuit sexual harassment",
+      "timestamp": "2026-02-04T23:15:00.000000"
+    },
+    {
+      "name": "Sam Tarantino, Josh Greenberg",
+      "year": 2014,
+      "company": "Grooveshark",
+      "issue": "Lawsuits: Major copyright infringement suits from record labels (Universal, Sony, etc.). Lost summary judgment (2014). Shut down (2015) as part of settlement; founders acknowledged operating infringing site with 35M users.",
+      "source": "NY Times, Yahoo, Ars Technica, WSJ, Billboard",
+      "query_used": "\"Sam Tarantino\" \"Grooveshark\" lawsuit sued copyright",
+      "timestamp": "2026-02-04T23:20:00.000000"
+    },
+    {
+      "name": "Brittney Griner",
+      "year": 2014,
+      "company": "WNBA Phoenix Mercury",
+      "issue": "Arrested/Convicted: Detained in Russia (Feb 2022) on drug charges for cannabis cartridges. Convicted and sentenced to 9 years in Russian prison. Spent 293 days imprisoned. Released via prisoner exchange for Viktor Bout (Dec 2022).",
+      "source": "AP News, Wikipedia, NY Times, ESPN",
+      "query_used": "\"Brittney Griner\" arrested convicted lawsuit legal",
+      "timestamp": "2026-02-04T23:25:00.000000"
+    },
+    {
+      "name": "Lionel Messi",
+      "year": 2014,
+      "company": "FC Barcelona",
+      "issue": "Tax Fraud Conviction: Convicted on three counts of tax fraud in Spain (2016) for evading €4.1M in taxes on image rights (2007-09). Sentenced to 21 months prison (suspended). Lost Supreme Court appeal (May 2017). Sentence replaced with ~€252K fine plus ~€2M in additional fines. Used tax havens in Belize and Uruguay.",
+      "source": "BBC, ESPN, Forbes, CNN, NY Times, El Pais",
+      "query_used": "\"Lionel Messi\" tax fraud convicted sentenced",
+      "timestamp": "2026-02-04T23:30:00.000000"
+    },
+    {
+      "name": "Shaun White",
+      "year": 2014,
+      "company": "Snowboarder/Olympian",
+      "issue": "Lawsuit: Sexual harassment lawsuit filed (2016) by former band drummer Lena Zawaideh, alleging harassment and breach of contract. Settled May 2017. Controversy resurfaced during 2018 Olympics when White called it 'gossip' and apologized.",
+      "source": "Time, PBS, ESPN, BBC, NBC San Diego",
+      "query_used": "\"Shaun White\" lawsuit sued sexual harassment",
+      "timestamp": "2026-02-04T23:32:00.000000"
+    },
+    {
+      "name": "Derrick Rose",
+      "year": 2014,
+      "company": "Chicago Bulls (NBA)",
+      "issue": "Lawsuit: Civil lawsuit for sexual assault filed (2015) by ex-girlfriend alleging gang rape. High-profile trial Oct 2016. Jury found Rose and two friends NOT LIABLE. Plaintiff appealed (2018).",
+      "source": "NBA.com, ESPN, NPR, ABC News, The Guardian",
+      "query_used": "\"Derrick Rose\" lawsuit sued legal trouble",
+      "timestamp": "2026-02-04T23:35:00.000000"
+    },
+    {
+      "name": "Michelle Phan",
+      "year": 2015,
+      "company": "ipsy (YouTube/Cosmetics)",
+      "issue": "Lawsuit: Sued by Ultra Records (Jul 2014) for copyright infringement over use of music in YouTube videos. Settled Aug 2015. Also victim of attorney Michael Avenatti's theft of $4M from her ipsy share sale.",
+      "source": "BBC, Billboard, Hollywood Reporter, Tubefilter",
+      "query_used": "\"Michelle Phan\" \"Ultra Records\" lawsuit copyright music",
+      "timestamp": "2026-02-04T23:45:00.000000"
+    },
+    {
+      "name": "Ed Sheeran",
+      "year": 2015,
+      "company": "Musician",
+      "issue": "Lawsuits: Multiple copyright infringement suits. Sued over 'Thinking Out Loud' (vs Marvin Gaye's 'Let's Get It On') - won jury trial May 2023, Supreme Court rejected plaintiff's appeal Jun 2025. Also sued over 'Shape of You' and other songs. Prevailed in cases but faced significant litigation.",
+      "source": "CNN, Variety, Pitchfork, Rolling Stone, USA Today",
+      "query_used": "\"Ed Sheeran\" lawsuit sued copyright infringement",
+      "timestamp": "2026-02-04T23:50:00.000000"
+    },
+    {
+      "name": "Ansel Elgort",
+      "year": 2015,
+      "company": "Actor",
+      "issue": "Allegations: Sexual assault allegation (Jun 2020) from woman claiming assault when she was 17 (2014). Elgort denied, claimed consensual relationship. No lawsuit filed but controversy affected West Side Story (2021) promotion and his career.",
+      "source": "LA Times, Vanity Fair, People, Vulture, Entertainment Weekly",
+      "query_used": "\"Ansel Elgort\" lawsuit sued sexual assault allegations",
+      "timestamp": "2026-02-05T00:28:00.000000"
+    },
+    {
+      "name": "Sam Smith",
+      "year": 2015,
+      "company": "Musician",
+      "issue": "Lawsuits: Settled copyright dispute with Tom Petty/Jeff Lynne over 'Stay With Me' similarities to 'Won't Back Down' (2015) - gave 25% royalties. Also sued over 'Dancing With a Stranger' (2019) - won initially Sep 2023 but 9th Circuit overturned Apr 2025, case going to jury.",
+      "source": "GW Law, Hollywood Reporter, The Guardian, CBC",
+      "query_used": "\"Sam Smith\" singer lawsuit sued copyright",
+      "timestamp": "2026-02-05T00:29:00.000000"
+    },
+    {
+      "name": "Zac Efron",
+      "year": 2015,
+      "company": "Actor",
+      "issue": "Lawsuit: Sued (with Netflix) by Down to Earth Organics LLC (Jul 2022) for trademark infringement over his travel show 'Down to Earth with Zac Efron'.",
+      "source": "Fox Business",
+      "query_used": "\"Zac Efron\" lawsuit sued arrested legal trouble",
+      "timestamp": "2026-02-05T00:30:00.000000"
+    },
+    {
+      "name": "Keke Palmer",
+      "year": 2015,
+      "company": "Actress/Singer",
+      "issue": "Legal battle: Filed restraining order against ex Darius Jackson (Nov 2023) alleging domestic violence. Jackson counter-sued (Dec 2023) accusing Palmer of abuse. Both filed domestic violence restraining orders against each other. Ongoing custody dispute over their son.",
+      "source": "VIBE, LA Times, Page Six, People, Newsweek, Entertainment Weekly",
+      "query_used": "\"Keke Palmer\" lawsuit sued legal Darius Jackson",
+      "timestamp": "2026-02-05T00:31:00.000000"
+    },
+    {
+      "name": "Miles Teller",
+      "year": 2015,
+      "company": "Actor",
+      "issue": "Arrest: Arrested in San Diego for public intoxication (Jun 2017). Also punched in Hawaii (May 2021) in dispute over alleged unpaid $60K wedding planner bill - attacker charged with assault.",
+      "source": "People, Entertainment Weekly, Yahoo, RadarOnline",
+      "query_used": "\"Miles Teller\" actor lawsuit sued arrested assault",
+      "timestamp": "2026-02-05T00:32:00.000000"
+    },
+    {
+      "name": "Novak Djokovic",
+      "year": 2015,
+      "company": "Tennis player",
+      "issue": "Deportation/Legal: Deported from Australia (Jan 2022) for breaching border rules (unvaccinated). Held in detention hotel. Lost court appeal to fight deportation. Considering $6M lawsuit against Australian government (Jan 2026).",
+      "source": "The Guardian, BBC, AP News, NY Post, Yahoo Sports, NY Times",
+      "query_used": "\"Novak Djokovic\" lawsuit sued legal deported Australia",
+      "timestamp": "2026-02-05T00:33:00.000000"
+    },
+    {
+      "name": "Jon Jones",
+      "year": 2015,
+      "company": "UFC",
+      "issue": "Multiple arrests: DUI (2012). Hit and run (2015). DWI + negligent firearm use (Mar 2020) - pleaded guilty. Domestic battery (Sep 2021). New misdemeanor charge (Jun 2025). Multiple PED violations. Extensive legal history.",
+      "source": "ESPN, CBC, MMA Junkie, Yahoo Sports, Fox Sports Radio",
+      "query_used": "\"Jon Jones\" UFC arrested lawsuit legal DUI domestic",
+      "timestamp": "2026-02-05T00:34:00.000000"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "year": 2015,
+      "company": "Real Madrid (Football)",
+      "issue": "Lawsuit: Sued for rape by Kathryn Mayorga alleging assault in Las Vegas (2009). Paid $375K hush money settlement (2010). Civil lawsuit filed 2018, dismissed Jun 2022 (attorney used stolen docs). Appeal denied Nov 2023. Police reopened investigation but declined charges.",
+      "source": "ESPN, BBC, The Guardian, NPR, AP News, PBS",
+      "query_used": "\"Cristiano Ronaldo\" lawsuit sued rape allegations Las Vegas",
+      "timestamp": "2026-02-05T00:35:00.000000"
+    },
+    {
+      "name": "Demi Lovato",
+      "year": 2016,
+      "company": "Musician",
+      "issue": "Lawsuit: Sued by Sleigh Bells (Aug 2016) for copyright infringement over song 'Stars'. Case settled Apr 2017.",
+      "source": "Billboard, NBC News, TMZ",
+      "query_used": "\"Demi Lovato\" lawsuit sued scandal controversy",
+      "timestamp": "2026-02-05T00:40:00.000000"
+    },
+    {
+      "name": "Selena Gomez",
+      "year": 2016,
+      "company": "Musician",
+      "issue": "Lawsuits: Sued by perfume company Adrenalina (2013) for breach of licensing deal. Also sued for plagiarism. Filed $10M lawsuit (2020) against mobile game company for unauthorized use of likeness - settled (2023).",
+      "source": "Rolling Stone, Variety, Hollywood Reporter, Billboard",
+      "query_used": "\"Selena Gomez\" lawsuit sued legal trouble",
+      "timestamp": "2026-02-05T00:42:00.000000"
+    },
+    {
+      "name": "Fetty Wap",
+      "year": 2016,
+      "company": "Musician",
+      "issue": "Federal Prison: Sentenced 6 years (May 2023) for drug trafficking conspiracy involving 100+ kg controlled substances. Also jailed for FaceTime death threat + gun possession (Aug 2022). Released early (Jan 2026).",
+      "source": "LA Times, NY Times, DOJ, Pitchfork, People",
+      "query_used": "\"Fetty Wap\" arrested charged lawsuit legal",
+      "timestamp": "2026-02-05T00:45:00.000000"
+    },
+    {
+      "name": "Grimes",
+      "year": 2016,
+      "company": "Musician",
+      "issue": "Custody Lawsuit: Sued by Elon Musk (Sep 2023) in Texas over parental rights. Grimes counter-sued (Oct 2023) for custody of their 3 children. Case closed (Nov 2024).",
+      "source": "Business Insider, NBC News, LA Times, Yahoo",
+      "query_used": "\"Grimes\" musician lawsuit sued Elon Musk custody",
+      "timestamp": "2026-02-05T00:47:00.000000"
+    },
+    {
+      "name": "Nick Jonas",
+      "year": 2016,
+      "company": "Musician",
+      "issue": "Lawsuits: Jonas Brothers sued for copyright infringement (2020) over Instagram photo - settled $150K. Also filed $4M lawsuit (2023) over mold/construction defects in LA mansion.",
+      "source": "Yahoo, Page Six, TMZ, mandourlaw.com",
+      "query_used": "\"Nick Jonas\" lawsuit sued legal trouble",
+      "timestamp": "2026-02-05T00:50:00.000000"
+    },
+    {
+      "name": "James Charles",
+      "year": 2017,
+      "company": "Makeup Artist/YouTuber",
+      "issue": "Lawsuit/Allegations: Sued by former employee Kelly Rocklein (May 2021) for wrongful termination. Sexual misconduct allegations led to YouTube demonetization (2021). Multiple allegations of inappropriate behavior with minors.",
+      "source": "NBC News, Business Insider, Yahoo, NY Magazine",
+      "query_used": "\"James Charles\" lawsuit sued controversy allegations",
+      "timestamp": "2026-02-05T00:55:00.000000"
+    },
+    {
+      "name": "Whitney Wolfe Herd",
+      "year": 2017,
+      "company": "Bumble",
+      "issue": "Lawsuit: Sued Tinder (Jun 2014) for sexual harassment and discrimination - settled. Match Group later sued Bumble for patent infringement (2018).",
+      "source": "CNN, BBC, Wikipedia, Harvard JOLT",
+      "query_used": "\"Whitney Wolfe Herd\" Bumble Tinder lawsuit sued",
+      "timestamp": "2026-02-05T01:00:00.000000"
+    },
+    {
+      "name": "David Dobrik",
+      "year": 2021,
+      "company": "TikToker/YouTuber",
+      "issue": "Lawsuit: Sued by Jeff Wittek for $10M (Jun 2022) for excavator stunt causing brain injury and skull fracture. Vlog Squad sexual assault allegations (Feb 2021) led to loss of sponsors and investors distancing from Dispo app.",
+      "source": "Vulture, People, Us Weekly, Business Insider, NY Times",
+      "query_used": "\"David Dobrik\" lawsuit sued assault allegations controversy",
+      "timestamp": "2026-02-05T07:15:00.000000"
+    },
+    {
+      "name": "Lil Nas X",
+      "year": 2020,
+      "company": "Musician",
+      "issue": "Lawsuit/Controversy: Nike sued MSCHF (Mar 2021) over 'Satan Shoes' collaboration with Lil Nas X - modified Nike Air Max 97s containing human blood. Case settled with voluntary recall (Apr 2021). Lil Nas X named in controversy but not defendant.",
+      "source": "Google Search, Various news",
+      "query_used": "\"Lil Nas X\" lawsuit sued Nike Satan shoes",
+      "timestamp": "2026-02-05T07:25:00.000000"
+    },
+    {
+      "name": "Travis Scott",
+      "year": 2018,
+      "company": "Musician",
+      "issue": "Lawsuits: Astroworld Festival tragedy (Nov 2021) - 10 deaths including 9-year-old child. $2B+ in lawsuits filed against Travis Scott, Live Nation, and others. All 9 wrongful death lawsuits settled (May 2024). Hundreds of injury suits settled (Oct 2024).",
+      "source": "AP News, BBC, NBC News, NY Times, Billboard",
+      "query_used": "\"Travis Scott\" Astroworld lawsuit wrongful death",
+      "timestamp": "2026-02-05T07:30:00.000000"
+    },
+    {
+      "name": "Kylie Jenner",
+      "year": 2017,
+      "company": "Kylie Cosmetics",
+      "issue": "Lawsuits: Seed Beauty trade secrets lawsuit vs Coty/Kylie Cosmetics (2020). Forbes stripped billionaire status for allegedly inflating financials (2020). Shareholder suit against Coty claiming they overpaid. Model Sasha Palma sued for $120K unpaid fees (2023). Copyright infringement suit over 'Lips' artwork (2017).",
+      "source": "Forbes, Paper Magazine, Hindustan Times, British Vogue, The Guardian",
+      "query_used": "\"Kylie Jenner\" \"Kylie Cosmetics\" lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T07:35:00.000000"
+    },
+    {
+      "name": "Kendall Jenner",
+      "year": 2024,
+      "company": "818 Tequila",
+      "issue": "Lawsuits: 818 Tequila sued by Tequila 512 for trademark infringement (2022). '100% agave' deceptive labeling lawsuit (Jan 2026). Cultural appropriation controversy at 818 launch (2021). Pepsi ad controversy (2017) - trivializing social justice movements, ad pulled and Jenner apologized.",
+      "source": "The Spirits Business, Malloy Law, TODAY, Business Insider, SCMP",
+      "query_used": "\"Kendall Jenner\" \"818 Tequila\" lawsuit sued controversy Pepsi",
+      "timestamp": "2026-02-05T07:36:00.000000"
+    },
+    {
+      "name": "Young Thug",
+      "year": 2018,
+      "company": "Musician (Hip-hop)",
+      "issue": "RICO charges: Indicted May 2022 on RICO/gang charges for co-founding and leading YSL gang. Georgia's longest-running criminal trial (2+ years). Pleaded guilty Oct 31, 2024. Sentenced to time served (~2.5 years in jail) + 15 years probation. Released Oct 2024. Full case ended Jun 2025.",
+      "source": "NPR, NBC News, Billboard, LA Times, FOX 5 Atlanta, Wikipedia",
+      "query_used": "\"Young Thug\" RICO convicted sentenced trial",
+      "timestamp": "2026-02-05T07:40:00.000000"
+    },
+    {
+      "name": "Lizzo",
+      "year": 2018,
+      "company": "Musician",
+      "issue": "Lawsuits: Sued by 3 former dancers (Aug 2023) for sexual harassment, hostile work environment, religious and racial harassment. Former stylist also filed separate harassment lawsuit (dismissed Dec 2024). 14 dancers received settlement in earlier separate case. Litigation ongoing.",
+      "source": "BBC, NBC News, LA Times, Rolling Stone, Variety",
+      "query_used": "\"Lizzo\" lawsuit sued harassment allegations",
+      "timestamp": "2026-02-05T07:45:00.000000"
+    },
+    {
+      "name": "Megan Thee Stallion",
+      "year": 2020,
+      "company": "Musician",
+      "issue": "Victim/Lawsuit: Shot by Tory Lanez (Jul 2020) in LA. Tory Lanez convicted of assault with semiautomatic firearm, sentenced to 10 years prison (2023). Won $250K+ defamation lawsuit (Dec 2025) against blogger Milagro Gramz for spreading lies about the shooting.",
+      "source": "NBC News, USA Today, ABC News, Billboard",
+      "query_used": "\"Megan Thee Stallion\" lawsuit sued Tory Lanez shooting",
+      "timestamp": "2026-02-05T07:46:00.000000"
+    },
+    {
+      "name": "DaBaby",
+      "year": 2020,
+      "company": "Musician",
+      "issue": "Criminal/Lawsuits: Charged felony battery (2022) for punching 64-year-old rental property owner, knocking out tooth. Accepted misdemeanor plea deal (Jul 2024) to avoid jail. 2019 guilty plea for concealed weapon after fatal Walmart shooting in NC. Arrested Beverly Hills weapons charge (Jan 2021). Multiple assault lawsuits.",
+      "source": "WCNC, Billboard, VICE, Rolling Stone, XXL Mag, Page Six",
+      "query_used": "\"DaBaby\" arrested charged assault lawsuit shooting",
+      "timestamp": "2026-02-05T07:50:00.000000"
+    },
+    {
+      "name": "Post Malone",
+      "year": 2019,
+      "company": "Musician - Pop",
+      "issue": "Lawsuits: $10M lawsuit from limo driver Larry Deuel (Oct 2025) claiming unpaid appearance in 'Tommy Lee' music video. 'Circles' songwriting lawsuit settled out of court (Mar 2023). Bugatti lawsuit (2022).",
+      "source": "Page Six, TMZ, NBC DFW, Billboard",
+      "query_used": "\"Post Malone\" lawsuit sued legal trouble",
+      "timestamp": "2026-02-05T07:56:00.000000"
+    },
+    {
+      "name": "Bad Bunny",
+      "year": 2019,
+      "company": "Musician-Reggaeton",
+      "issue": "Lawsuits: Paid $40M settlement to ex-girlfriend Carliz De la Cruz Hernández (2024) for unauthorized use of her voice recording. $16M lawsuit (Jan 2026) over voice samples in 'Solo de Mi' and 'EoO'. 'Safaera' copyright infringement suit (Oct 2021). $1M lawsuit (Sep 2025) from 84-year-old Puerto Rican homeowner over use of iconic house in video/residency.",
+      "source": "People, Yahoo, BBC, Billboard, NY Post, Reddit",
+      "query_used": "\"Bad Bunny\" lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T08:00:00.000000"
+    },
+    {
+      "name": "The Weeknd",
+      "year": 2016,
+      "company": "Musician",
+      "issue": "Lawsuits: 'Call Out My Name' copyright lawsuit settled (Mar 2023). 'Starboy' songwriting lawsuit with Daft Punk (Sep 2018). 'The Hills' sued over similarities to sci-fi movie score (Yeasayer lawsuit dropped). 2016 Las Vegas assault incident - ordered to pay $1K to injured police fund + anger management + 50 hours community service.",
+      "source": "BBC, Page Six, Wikipedia, YourTango",
+      "query_used": "\"The Weeknd\" lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T08:02:00.000000"
+    },
+    {
+      "name": "Jack Harlow",
+      "year": 2022,
+      "company": "Musician—Hip-hop",
+      "issue": "Lawsuit: Named in lawsuit related to fatal 2021 Derby Eve shooting in Louisville where his DJ (Two Shell/Ronnie O'Bannon) shot and killed bartender Kasmira Nash. Harlow dismissed from lawsuit (Apr 2025). Controversial 'Gang Gang Gang' song lyrics about friends accused of rape/pedophilia (May 2023).",
+      "source": "Courier-Journal, Jezebel, TikTok",
+      "query_used": "\"Jack Harlow\" lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T08:04:00.000000"
+    },
+    {
+      "name": "Ice Spice",
+      "year": 2024,
+      "company": "RAPPER",
+      "issue": "Lawsuit: Copyright infringement suit from Brooklyn rapper D.Chamberz alleging 'In Ha Mood' (2023) ripped off his track 'In That Mood' (2021). Case settled. Also accused of not paying wig company (Bella brand) and allegedly buying video views for 'Batty Daddy'.",
+      "source": "Music Ecosystems Institute, Intangible Business, Instagram, TikTok",
+      "query_used": "\"Ice Spice\" lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T08:06:00.000000"
+    },
+    {
+      "name": "Drake",
+      "year": 2013,
+      "company": "Musician",
+      "issue": "Lawsuits: RICO class action (Jan 2026) alleging use of illegal online casino Stake funds ($100M/year) to fund artificial bot campaigns inflating streams. Defamation suit against UMG over Kendrick Lamar's 'Not Like Us' diss track (accused him of pedophilia, sex trafficking) - dismissed by judge (Oct 2025). Major public feud with Kendrick Lamar (2024).",
+      "source": "The Guardian, USA Today, CBC, BBC, PBS, Wikipedia",
+      "query_used": "\"Drake\" rapper lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T08:10:00.000000"
+    },
+    {
+      "name": "Offset",
+      "year": 2018,
+      "company": "Migos",
+      "issue": "Arrests: Felony gun charges in Atlanta (Jul 2018). Felony phone smashing charge (May 2019) - dropped. Lawsuits: Sued for assault on security guard at LA cannabis dispensary (Nov 2025). Prior arrests with Migos (2015).",
+      "source": "Rolling Stone, The Fader, Daily Mail, Law Commentary, Reddit",
+      "query_used": "\"Offset\" Migos lawsuit arrested controversy",
+      "timestamp": "2026-02-05T08:12:00.000000"
+    },
+    {
+      "name": "Lil Baby",
+      "year": 2021,
+      "company": "Musician - Hip-Hop",
+      "issue": "Arrests: Las Vegas gun charge (Aug 2024) - concealed weapon without permit at Wynn. Paris cannabis arrest (Jul 2021) - detained/fined with James Harden nearby. Gang investigation: Atlanta police linked him to teens' deaths at birthday party (Feb 2025) - allegedly incited gang retaliation by filming music video. Lawyers threatened defamation suit. Court footage alleges he put money on people for shootings. Potential RICO investigation.",
+      "source": "FOX 5 Atlanta, WLUK, Las Vegas Review-Journal, LA Times, HotNewHipHop, Reddit",
+      "query_used": "\"Lil Baby\" rapper arrested lawsuit charged legal controversy",
+      "timestamp": "2026-02-05T08:15:00.000000"
+    },
+    {
+      "name": "Chance the Rapper",
+      "year": 2015,
+      "company": "Independent rapper",
+      "issue": "Lawsuits: Sued by former manager Pat Corcoran (2020) for $3M+ alleging unpaid wages, breach of contract, fraud. Trial pending. Copyright infringement lawsuit (2017) for unauthorized sample on 10 Day mixtape. Child support legal dispute.",
+      "source": "Slate, Hot991, Highsnobiety, HotNewHipHop, Facebook",
+      "query_used": "\"Chance the Rapper\" lawsuit sued controversy scandal legal",
+      "timestamp": "2026-02-05T08:18:00.000000"
+    },
+    {
+      "name": "Azealia Banks",
+      "year": 2015,
+      "company": "Rapper/Singer",
+      "issue": "Controversies: Subpoenaed in Elon Musk lawsuit (2019). Dropped from UK festival (2016) for racist/homophobic tweets at Zayn Malik. Twitter suspended repeatedly. Claimed assault by Russell Crowe (2016) - DA declined charges. Threatening to sue Matty Healy (2024). Multiple public feuds with celebrities including Lana Del Rey, Skai Jackson, Nicki Minaj, Iggy Azalea. Released Conor McGregor nudes (Jul 2025).",
+      "source": "People, Billboard, Daily Mail, Wikipedia, Rolling Stone, The Guardian, CNN",
+      "query_used": "\"Azealia Banks\" lawsuit sued controversy scandal arrested",
+      "timestamp": "2026-02-05T08:20:00.000000"
+    },
+    {
+      "name": "Ariana Grande",
+      "year": 2013,
+      "company": "Actor/Singer",
+      "issue": "Lawsuits: Sued Forever 21 for $10M (2019) over unauthorized use of likeness - settled. Sued for '7 Rings' copyright infringement (2020). 'One Last Time' plagiarism lawsuit by Alex Greggs (2016). Cultural appropriation/blackfishing controversy - she's filing DMCA copyright notices against critics discussing her 'Blaccent'.",
+      "source": "LA Times, CNN, BBC, Business Insider, Reddit, The Tab",
+      "query_used": "\"Ariana Grande\" lawsuit sued controversy scandal legal",
+      "timestamp": "2026-02-05T08:22:00.000000"
+    },
+    {
+      "name": "Evan Spiegel",
+      "year": 2015,
+      "company": "Snapchat",
+      "issue": "Lawsuits: Paid $157.5M (2014) to settle ousted co-founder Reggie Brown's lawsuit claiming he was the original idea creator. Child safety lawsuits - New Mexico AG unredacted lawsuit (2024). Parents suing over teens' fentanyl deaths (2025). Social media addiction trial - settled Jan 2026. Sexism charges at Snap (2018). Leaked filthy college emails scandal (2014).",
+      "source": "TechCrunch, LA Times, CNN, Vanity Fair, NPR, CTV News, Tech Policy Press",
+      "query_used": "\"Evan Spiegel\" Snapchat lawsuit sued controversy scandal",
+      "timestamp": "2026-02-05T08:25:00.000000"
+    },
+    {
+      "name": "Kyrie Irving",
+      "year": 2017,
+      "company": "NBA",
+      "issue": "Suspensions: Brooklyn Nets suspended him 5+ games without pay (Nov 2022) for promoting antisemitic film on Twitter. Nike terminated partnership and cancelled signature shoe (Dec 2022) due to antisemitism fallout. Known flat earth conspiracy theorist. COVID vaccine refusal kept him from playing home games during 2021-22 season due to NYC mandate.",
+      "source": "NPR, KRQE, Arizona Daily Star, Wikipedia, Nicki Swift",
+      "query_used": "\"Kyrie Irving\" lawsuit sued controversy scandal suspended",
+      "timestamp": "2026-02-05T08:28:00.000000"
+    }
+  ],
+  "uncertain_cases": [],
+  "search_history": []
+}
