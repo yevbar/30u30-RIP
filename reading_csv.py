@@ -19,7 +19,10 @@ def run():
                 query = f'"{row["name"]}" "{row["company"]}" lawsuit sued controversy scandal'
                 safe_string = urllib.parse.quote_plus(query)
                 subprocess.run(["open", f"https://www.google.com/search?q={safe_string}"])
-                fraud = input(f'''[{row["name"]}] Enter "N/A" if not applicable otherwise enter reason for fraud: ''')
+                fraud = input(f'''[{row["name"]}] Enter reason for fraud (N/A): ''')
+                if len(fraud) == 0:
+                    fraud = "N/A"
+
                 new_row = {
                     **row,
                     "fraud": fraud,
