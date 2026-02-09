@@ -9,6 +9,96 @@
           padding: 0;
           margin: 0;
       }
+
+      #search-container {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-family: sans-serif;
+      }
+
+      #search-bar {
+        display: flex;
+        background: rgba(32, 8, 64, 0.9);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+      }
+
+      #search-input {
+        width: 180px;
+        padding: 10px 14px;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: white;
+        font-size: 14px;
+        font-family: sans-serif;
+      }
+
+      #search-input::placeholder {
+        color: rgba(255,255,255,0.5);
+      }
+
+      #search-btn {
+        padding: 10px 16px;
+        border: none;
+        background: rgba(255,255,255,0.15);
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: sans-serif;
+        transition: background 0.2s;
+      }
+
+      #search-btn:hover {
+        background: rgba(255,255,255,0.25);
+      }
+
+      #search-results {
+        display: none;
+        margin-top: 4px;
+        background: rgba(32, 8, 64, 0.95);
+        border-radius: 8px;
+        max-height: 240px;
+        overflow-y: auto;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        width: 100%;
+      }
+
+      .search-result-item {
+        padding: 10px 14px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.15s;
+      }
+
+      .search-result-item:first-child {
+        border-radius: 8px 8px 0 0;
+      }
+
+      .search-result-item:last-child {
+        border-radius: 0 0 8px 8px;
+      }
+
+      .search-result-item:only-child {
+        border-radius: 8px;
+      }
+
+      .search-result-item:hover {
+        background: rgba(255,255,255,0.15);
+      }
+
+      #search-no-results {
+        padding: 10px 14px;
+        color: rgba(255,255,255,0.5);
+        font-size: 14px;
+      }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
     <script>
@@ -20,6 +110,13 @@
       let tooltipDiv;
       let camDist, camRotX, camRotY;
       let selectedBox = null;
+
+      // Animation state for search-based navigation
+      let isAnimating = false;
+      let animStartRotX, animStartRotY;
+      let animTargetRotX, animTargetRotY;
+      let animProgress = 0;
+      let animTargetBox = null;
 
       function setup() {
         createCanvas(windowWidth, windowHeight, WEBGL);
@@ -173,8 +270,29 @@
       function draw() {
 	background(250, 180, 200);
 
-	// Manual orbit control: drag to rotate
-	if (mouseIsPressed) {
+	// Handle animation from search selection
+	if (isAnimating) {
+	  animProgress += 0.018;
+	  if (animProgress >= 1) {
+	    animProgress = 1;
+	    isAnimating = false;
+	    camRotX = animTargetRotX;
+	    camRotY = animTargetRotY;
+	    // Animation complete: select the box and show tooltip
+	    if (animTargetBox) {
+	      selectedBox = animTargetBox.boxNumber;
+	      tooltipDiv.html('Box #' + animTargetBox.boxNumber);
+	      tooltipDiv.style('display', 'block');
+	      // Position tooltip at center of screen with offset
+	      tooltipDiv.position(width / 2 + 20, height / 2 - 20);
+	    }
+	  } else {
+	    let t = easeInOutCubic(animProgress);
+	    camRotX = animStartRotX + (animTargetRotX - animStartRotX) * t;
+	    camRotY = animStartRotY + (animTargetRotY - animStartRotY) * t;
+	  }
+	} else if (mouseIsPressed) {
+	  // Manual orbit control: drag to rotate
 	  camRotY -= movedX * 0.3;
 	  camRotX += movedY * 0.3;
 	  camRotX = constrain(camRotX, -89, 89);
@@ -225,6 +343,10 @@
       }
 
       function mousePressed() {
+	// Cancel animation if user starts interacting
+	if (isAnimating) {
+	  isAnimating = false;
+	}
 	pressX = mouseX;
 	pressY = mouseY;
       }
@@ -248,8 +370,144 @@
 	// Resize the canvas to the new window dimensions
 	resizeCanvas(windowWidth, windowHeight);
       }
+
+      // --- Search functionality ---
+
+      function initSearch() {
+	let input = document.getElementById('search-input');
+	let btn = document.getElementById('search-btn');
+	let resultsDiv = document.getElementById('search-results');
+
+	input.addEventListener('input', function() {
+	  performSearch(this.value.trim());
+	});
+
+	input.addEventListener('keydown', function(e) {
+	  if (e.key === 'Enter') {
+	    e.preventDefault();
+	    // Select the first result if available
+	    let firstItem = resultsDiv.querySelector('.search-result-item');
+	    if (firstItem) firstItem.click();
+	  }
+	  if (e.key === 'Escape') {
+	    resultsDiv.style.display = 'none';
+	    input.blur();
+	  }
+	});
+
+	btn.addEventListener('click', function() {
+	  let firstItem = resultsDiv.querySelector('.search-result-item');
+	  if (firstItem) firstItem.click();
+	  else performSearch(input.value.trim());
+	});
+
+	// Close results when clicking outside
+	document.addEventListener('mousedown', function(e) {
+	  if (!e.target.closest('#search-container')) {
+	    resultsDiv.style.display = 'none';
+	  }
+	});
+
+	// Prevent canvas interaction when typing in search
+	input.addEventListener('mousedown', function(e) { e.stopPropagation(); });
+	input.addEventListener('mouseup', function(e) { e.stopPropagation(); });
+      }
+
+      function performSearch(query) {
+	let resultsDiv = document.getElementById('search-results');
+	resultsDiv.innerHTML = '';
+
+	if (!query) {
+	  resultsDiv.style.display = 'none';
+	  return;
+	}
+
+	// Filter boxes whose boxNumber contains the query string
+	let matches = boxConfigs.filter(function(cfg) {
+	  return String(cfg.boxNumber).indexOf(query) !== -1;
+	});
+
+	// Prioritize exact matches, then startsWith, then contains
+	matches.sort(function(a, b) {
+	  let aStr = String(a.boxNumber);
+	  let bStr = String(b.boxNumber);
+	  let aExact = aStr === query;
+	  let bExact = bStr === query;
+	  if (aExact !== bExact) return aExact ? -1 : 1;
+	  let aStarts = aStr.indexOf(query) === 0;
+	  let bStarts = bStr.indexOf(query) === 0;
+	  if (aStarts !== bStarts) return aStarts ? -1 : 1;
+	  return a.boxNumber - b.boxNumber;
+	});
+
+	// Limit to 20 results
+	matches = matches.slice(0, 20);
+
+	if (matches.length === 0) {
+	  resultsDiv.innerHTML = '<div id="search-no-results">No results</div>';
+	  resultsDiv.style.display = 'block';
+	  return;
+	}
+
+	matches.forEach(function(cfg) {
+	  let item = document.createElement('div');
+	  item.className = 'search-result-item';
+	  item.textContent = 'Box #' + cfg.boxNumber;
+	  item.addEventListener('click', function() {
+	    selectSearchResult(cfg);
+	    resultsDiv.style.display = 'none';
+	    document.getElementById('search-input').value = String(cfg.boxNumber);
+	  });
+	  resultsDiv.appendChild(item);
+	});
+	resultsDiv.style.display = 'block';
+      }
+
+      function selectSearchResult(cfg) {
+	// Compute target camera angles to center this box
+	// Box is at (wx, wy, wz) on sphere of radius 2000
+	// Camera should be opposite the box so the box is centered in view
+	let r = 2000;
+	animTargetRotX = asin(constrain(-cfg.wy / r, -1, 1));
+	animTargetRotX = constrain(animTargetRotX, -89, 89);
+	animTargetRotY = atan2(cfg.wx, cfg.wz);
+
+	// Handle angle wrapping: pick shortest path for camRotY
+	animStartRotX = camRotX;
+	animStartRotY = camRotY;
+
+	// Normalize angles so we take the short way around
+	let diffY = animTargetRotY - animStartRotY;
+	while (diffY > 180) diffY -= 360;
+	while (diffY < -180) diffY += 360;
+	animTargetRotY = animStartRotY + diffY;
+
+	animProgress = 0;
+	animTargetBox = cfg;
+	isAnimating = true;
+
+	// Clear current selection during animation
+	selectedBox = null;
+	tooltipDiv.style('display', 'none');
+      }
+
+      // Easing function: smooth ease-in-out
+      function easeInOutCubic(t) {
+	return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      window.addEventListener('DOMContentLoaded', function() {
+	initSearch();
+      });
     </script>
   </head>
   <body>
+    <div id="search-container">
+      <div id="search-bar">
+        <input id="search-input" type="text" placeholder="Search box #..." autocomplete="off" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="search-results"></div>
+    </div>
   </body>
 </html>
