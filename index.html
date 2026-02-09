@@ -23,10 +23,10 @@
 
       #search-bar {
         display: flex;
-        background: rgba(32, 8, 64, 0.9);
+        background: rgba(40, 44, 52, 0.92);
+        border: 1px solid rgba(0, 200, 255, 0.6);
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
       }
 
       #search-input {
@@ -47,26 +47,28 @@
       #search-btn {
         padding: 10px 16px;
         border: none;
-        background: rgba(255,255,255,0.15);
+        border-left: 1px solid rgba(0, 200, 255, 0.3);
+        background: rgba(0, 200, 255, 0.15);
         color: white;
         font-size: 14px;
         cursor: pointer;
         font-family: sans-serif;
-        transition: background 0.2s;
+        transition: background 0.2s, color 0.2s;
       }
 
       #search-btn:hover {
-        background: rgba(255,255,255,0.25);
+        background: rgba(0, 200, 255, 0.3);
+        color: white;
       }
 
       #search-results {
         display: none;
         margin-top: 4px;
-        background: rgba(32, 8, 64, 0.95);
+        background: rgba(40, 44, 52, 0.95);
+        border: 1px solid rgba(0, 200, 255, 0.6);
         border-radius: 8px;
         max-height: 240px;
         overflow-y: auto;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.3);
         width: 100%;
       }
 
@@ -268,7 +270,7 @@
       }
 
       function draw() {
-	background(250, 180, 200);
+	background(204, 205, 198);
 
 	// Handle animation from search selection
 	if (isAnimating) {
@@ -399,6 +401,14 @@
 	  let firstItem = resultsDiv.querySelector('.search-result-item');
 	  if (firstItem) firstItem.click();
 	  else performSearch(input.value.trim());
+	});
+
+	// Escape key clears highlighted box and tooltip
+	document.addEventListener('keydown', function(e) {
+	  if (e.key === 'Escape') {
+	    selectedBox = null;
+	    tooltipDiv.style('display', 'none');
+	  }
 	});
 
 	// Close results when clicking outside
