@@ -12,6 +12,7 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
     <script>
+      let headModel, eyesModel, smileModel, frownModel;
       let boxConfigs = [];
       let clickPending = false;
       let clickX, clickY;
@@ -23,12 +24,43 @@
       function setup() {
         createCanvas(windowWidth, windowHeight, WEBGL);
 	angleMode(DEGREES);
-	strokeWeight(5);
+	strokeWeight(2);
 	noFill();
 	stroke(32, 8, 64);
 	describe(
-	  'Users can click on the screen and drag to adjust their perspective in 3D space. The space contains a sphere of dark purple cubes on a light pink background.'
+	  'Users can click on the screen and drag to adjust their perspective in 3D space. The space contains a sphere of dark purple astronaut figures on a light pink background.'
 	);
+
+	// Head (shared by both)
+	headModel = buildGeometry(function() {
+	  sphere(3, 8, 6);
+	});
+
+	// Eyes (shared by both)
+	eyesModel = buildGeometry(function() {
+	  push(); translate(-1, -0.8, 2.5); sphere(0.5, 5, 4); pop();
+	  push(); translate(1, -0.8, 2.5); sphere(0.5, 5, 4); pop();
+	});
+
+	// Smile arc
+	smileModel = buildGeometry(function() {
+	  for (let i = -3; i <= 3; i++) {
+	    push();
+	    translate(i * 0.5, 1.2 - i * i * 0.044, 2.6);
+	    sphere(0.25, 4, 4);
+	    pop();
+	  }
+	});
+
+	// Frown arc
+	frownModel = buildGeometry(function() {
+	  for (let i = -3; i <= 3; i++) {
+	    push();
+	    translate(i * 0.5, 0.8 + i * i * 0.044, 2.6);
+	    sphere(0.25, 4, 4);
+	    pop();
+	  }
+	});
 
 	// Initialize orbit camera to match original camera(800, -600, 4000)
 	camDist = sqrt(800*800 + 600*600 + 4000*4000);
@@ -53,7 +85,7 @@
 	      let wx = -y1 * sin(zAngle);
 	      let wy = y1 * cos(zAngle);
 	      let wz = z1;
-	      boxConfigs.push({ zAngle, xAngle, boxNumber: numBoxes + 1, wx, wy, wz });
+	      boxConfigs.push({ zAngle, xAngle, boxNumber: numBoxes + 1, wx, wy, wz, isOdd: (numBoxes + 1) % 2 === 1 });
 	      numBoxes++;
 	    }
 	  }
@@ -164,22 +196,30 @@
 	  handleBoxClick(eyeX, eyeY, eyeZ);
 	}
 
-	// Draw all boxes
+	// Draw all boxes with back-face culling
 	for (let i = 0; i < boxConfigs.length; i++) {
 	  let cfg = boxConfigs[i];
+	  // Back-face culling: skip faces whose outward normal points away from camera
+	  // Normal is (wx, wy, wz), view vector is (eyeX - wx, eyeY - wy, eyeZ - wz)
+	  if (cfg.wx * (eyeX - cfg.wx) + cfg.wy * (eyeY - cfg.wy) + cfg.wz * (eyeZ - cfg.wz) <= 0) continue;
 	  push();
 	  rotateZ(cfg.zAngle);
 	  rotateX(cfg.xAngle);
 	  translate(0, 2000, 0);
-	  if (cfg.boxNumber === selectedBox) {
-	    fill(0, 100, 255);
-	    stroke(0, 100, 255);
-	  }
-	  box(5);
-	  if (cfg.boxNumber === selectedBox) {
-	    noFill();
-	    stroke(32, 8, 64);
-	  }
+	  rotateX(-90);
+	  let isSel = cfg.boxNumber === selectedBox;
+	  // Head
+	  if (isSel) { fill(0, 100, 255); stroke(0, 80, 200); }
+	  else if (cfg.isOdd) { fill(255, 220, 50); stroke(220, 180, 0); }
+	  else { fill(100, 180, 255); stroke(50, 130, 220); }
+	  model(headModel);
+	  // Eyes
+	  fill(20, 20, 20); stroke(0);
+	  model(eyesModel);
+	  // Mouth
+	  if (isSel) { fill(255, 255, 255); stroke(200); }
+	  else { fill(200, 30, 30); stroke(150, 20, 20); }
+	  model(cfg.isOdd ? smileModel : frownModel);
 	  pop();
 	}
       }
