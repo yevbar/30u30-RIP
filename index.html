@@ -12,6 +12,14 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
     <script>
+      let boxConfigs = [];
+      let clickPending = false;
+      let clickX, clickY;
+      let pressX, pressY;
+      let tooltipDiv;
+      let camDist, camRotX, camRotY;
+      let selectedBox = null;
+
       function setup() {
         createCanvas(windowWidth, windowHeight, WEBGL);
 	angleMode(DEGREES);
@@ -22,44 +30,174 @@
 	  'Users can click on the screen and drag to adjust their perspective in 3D space. The space contains a sphere of dark purple cubes on a light pink background.'
 	);
 
-	// Position camera outside the orb (radius = 2000)
-	camera(800, -600, 4000, 0, 0, 0, 0, 1, 0);
-      }
+	// Initialize orbit camera to match original camera(800, -600, 4000)
+	camDist = sqrt(800*800 + 600*600 + 4000*4000);
+	camRotX = asin(600 / camDist);
+	camRotY = atan2(800, 4000);
 
-      function draw() {
-	background(250, 180, 200);
-
-	// Call every frame to adjust camera based on mouse/touch
-	orbitControl();
-
+	// Pre-compute box configs with world positions
 	let numBoxes = 0;
 	const maxBoxes = 8215;
-
-	// Start at the equator (largest rings) and work outward toward both poles
 	for (let offset = 0; offset <= 90 && numBoxes < maxBoxes; offset += 2) {
 	  let angles = [90 - offset];
 	  if (offset > 0) angles.push(90 + offset);
-
 	  for (let zAngle of angles) {
 	    if (zAngle < 0 || zAngle >= 180) continue;
 	    let ringRadius = sin(zAngle);
 	    let step = ringRadius > 0.05 ? 3 / ringRadius : 60;
 	    for (let xAngle = 0; xAngle < 360 && numBoxes < maxBoxes; xAngle += step) {
-	      push();
-	      rotateZ(zAngle);
-	      rotateX(xAngle);
-	      translate(0, 2000, 0);
-	      box(5);
-	      numBoxes += 1;
-	      pop();
+	      // Compute world position: rotateZ(zAngle) * rotateX(xAngle) * (0, 2000, 0)
+	      let r = 2000;
+	      let y1 = r * cos(xAngle);
+	      let z1 = r * sin(xAngle);
+	      let wx = -y1 * sin(zAngle);
+	      let wy = y1 * cos(zAngle);
+	      let wz = z1;
+	      boxConfigs.push({ zAngle, xAngle, boxNumber: numBoxes + 1, wx, wy, wz });
+	      numBoxes++;
 	    }
 	  }
 	}
 
-	if (!window.logged) {
-	  console.log(`Got ${numBoxes} boxes`);
-	  window.logged = true;
+	// Create tooltip element
+	tooltipDiv = createDiv('');
+	tooltipDiv.style('position', 'absolute');
+	tooltipDiv.style('background', 'rgba(32, 8, 64, 0.9)');
+	tooltipDiv.style('color', 'white');
+	tooltipDiv.style('padding', '8px 12px');
+	tooltipDiv.style('border-radius', '6px');
+	tooltipDiv.style('font-family', 'sans-serif');
+	tooltipDiv.style('font-size', '14px');
+	tooltipDiv.style('pointer-events', 'none');
+	tooltipDiv.style('display', 'none');
+	tooltipDiv.style('z-index', '1000');
+      }
+
+      // Raycast from camera through click point, find closest box
+      function handleBoxClick(eyeX, eyeY, eyeZ) {
+	// Build camera basis vectors
+	let fLen = sqrt(eyeX*eyeX + eyeY*eyeY + eyeZ*eyeZ);
+	let fx = -eyeX/fLen, fy = -eyeY/fLen, fz = -eyeZ/fLen; // forward (toward origin)
+
+	// right = cross(forward, worldUp(0,1,0)) = (-fz, 0, fx)
+	let rx = -fz, ry = 0, rz = fx;
+	let rLen = sqrt(rx*rx + rz*rz);
+	rx /= rLen; rz /= rLen;
+
+	// up = cross(right, forward)
+	let ux = ry*fz - rz*fy, uy = rz*fx - rx*fz, uz = rx*fy - ry*fx;
+	let uLen = sqrt(ux*ux + uy*uy + uz*uz);
+	ux /= uLen; uy /= uLen; uz /= uLen;
+
+	// Default p5.js FOV is 60 degrees
+	let halfTan = tan(30);
+	let aspect = width / height;
+
+	// Mouse position to NDC
+	let ndcX = (clickX - width / 2) / (width / 2);
+	let ndcY = (clickY - height / 2) / (height / 2);
+
+	// Ray direction
+	let dx = fx + rx * ndcX * halfTan * aspect + ux * ndcY * halfTan;
+	let dy = fy + uy * ndcY * halfTan;
+	let dz = fz + rz * ndcX * halfTan * aspect + uz * ndcY * halfTan;
+	let dLen = sqrt(dx*dx + dy*dy + dz*dz);
+	dx /= dLen; dy /= dLen; dz /= dLen;
+
+	let closestBox = null;
+	let closestDistSq = Infinity;
+
+	for (let i = 0; i < boxConfigs.length; i++) {
+	  let cfg = boxConfigs[i];
+	  // Vector from eye to box
+	  let tx = cfg.wx - eyeX;
+	  let ty = cfg.wy - eyeY;
+	  let tz = cfg.wz - eyeZ;
+	  // Project onto ray
+	  let t = tx*dx + ty*dy + tz*dz;
+	  if (t < 0) continue; // behind camera
+	  // Distance from box center to closest point on ray
+	  let cx = eyeX + dx*t - cfg.wx;
+	  let cy = eyeY + dy*t - cfg.wy;
+	  let cz = eyeZ + dz*t - cfg.wz;
+	  let dSq = cx*cx + cy*cy + cz*cz;
+	  if (dSq < closestDistSq) {
+	    closestDistSq = dSq;
+	    closestBox = cfg;
+	  }
 	}
+
+	if (closestBox && closestDistSq < 40*40) {
+	  selectedBox = closestBox.boxNumber;
+	  tooltipDiv.html('Box #' + closestBox.boxNumber);
+	  tooltipDiv.style('display', 'block');
+	  tooltipDiv.position(clickX + 15, clickY - 15);
+	} else {
+	  selectedBox = null;
+	  tooltipDiv.style('display', 'none');
+	}
+      }
+
+      function draw() {
+	background(250, 180, 200);
+
+	// Manual orbit control: drag to rotate
+	if (mouseIsPressed) {
+	  camRotY -= movedX * 0.3;
+	  camRotX += movedY * 0.3;
+	  camRotX = constrain(camRotX, -89, 89);
+	}
+
+	// Compute camera position from orbit angles
+	let eyeX = camDist * sin(camRotY) * cos(camRotX);
+	let eyeY = -camDist * sin(camRotX);
+	let eyeZ = camDist * cos(camRotY) * cos(camRotX);
+	camera(eyeX, eyeY, eyeZ, 0, 0, 0, 0, 1, 0);
+
+	// Handle click via raycasting
+	if (clickPending) {
+	  clickPending = false;
+	  handleBoxClick(eyeX, eyeY, eyeZ);
+	}
+
+	// Draw all boxes
+	for (let i = 0; i < boxConfigs.length; i++) {
+	  let cfg = boxConfigs[i];
+	  push();
+	  rotateZ(cfg.zAngle);
+	  rotateX(cfg.xAngle);
+	  translate(0, 2000, 0);
+	  if (cfg.boxNumber === selectedBox) {
+	    fill(0, 100, 255);
+	    stroke(0, 100, 255);
+	  }
+	  box(5);
+	  if (cfg.boxNumber === selectedBox) {
+	    noFill();
+	    stroke(32, 8, 64);
+	  }
+	  pop();
+	}
+      }
+
+      function mousePressed() {
+	pressX = mouseX;
+	pressY = mouseY;
+      }
+
+      function mouseReleased() {
+	// Only treat as a click if the mouse didn't move (not a drag for orbit)
+	if (dist(pressX, pressY, mouseX, mouseY) < 5) {
+	  clickPending = true;
+	  clickX = mouseX;
+	  clickY = mouseY;
+	}
+      }
+
+      function mouseWheel(event) {
+	camDist += event.delta * 2;
+	camDist = constrain(camDist, 500, 10000);
+	return false;
       }
 
       function windowResized() {
