@@ -10,6 +10,17 @@
           margin: 0;
       }
 
+      #hint-text {
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        z-index: 2000;
+        color: rgba(32, 8, 64, 0.7);
+        font-family: sans-serif;
+        font-size: 14px;
+        pointer-events: none;
+      }
+
       #search-container {
         position: fixed;
         top: 16px;
@@ -512,6 +523,7 @@
     </script>
   </head>
   <body>
+    <div id="hint-text">Click and drag around!</div>
     <div id="search-container">
       <div id="search-bar">
         <input id="search-input" type="text" placeholder="Search box #..." autocomplete="off" />
