@@ -146,6 +146,10 @@
 	  camRotY -= movedX * 0.3;
 	  camRotX += movedY * 0.3;
 	  camRotX = constrain(camRotX, -89, 89);
+	  if ((movedX !== 0 || movedY !== 0) && selectedBox !== null) {
+	    selectedBox = null;
+	    tooltipDiv.style('display', 'none');
+	  }
 	}
 
 	// Compute camera position from orbit angles
