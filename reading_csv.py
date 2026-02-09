@@ -12,13 +12,18 @@ def run():
         writer = csv.DictWriter(out_file, fieldnames=fieldnames)
         writer.writeheader()
 
-        for i, row in enumerate(csv_reader):
+        rows = list(csv_reader)
+        for i, row in enumerate(rows):
+            if i % 10 == 0:
+                print(f"{i} / {len(rows)}")
+
             if row["fraud"] != '':
                 writer.writerow(row)
             else:
-                query = f'"{row["name"]}" "{row["company"]}" lawsuit sued controversy scandal'
+                query = f'"{row["name"]}"' + (f' "{row["company"]}"' if len(row["company"]) > 0 else '') +  ' lawsuit sued controversy scandal'
                 safe_string = urllib.parse.quote_plus(query)
                 subprocess.run(["open", f"https://www.google.com/search?q={safe_string}"])
+
                 fraud = input(f'''[{row["name"]}] Enter reason for fraud (N/A): ''')
                 if len(fraud) == 0:
                     fraud = "N/A"
