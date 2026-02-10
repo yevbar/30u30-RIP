@@ -115,6 +115,13 @@
         color: rgba(255,255,255,0.5);
         font-size: 14px;
       }
+
+      .search-result-year {
+        color: rgba(255,255,255,0.45);
+        font-size: 12px;
+        margin-left: 6px;
+      }
+
       @media (max-width: 1000px) {
         #hint-text {
           font-size: 40px;
@@ -135,21 +142,27 @@
         .search-result-item {
           font-size: 28px;
         }
+        .search-result-year {
+          font-size: 22px;
+        }
         #search-no-results {
           font-size: 28px;
         }
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       let headModel, eyesModel, smileModel, frownModel;
       let boxConfigs = [];
+      let peopleData = [];
       let clickPending = false;
       let clickX, clickY;
       let pressX, pressY;
       let tooltipDiv;
       let camDist, camRotX, camRotY;
       let selectedBox = null;
+      let dataLoaded = false;
 
       // Momentum state for drag inertia
       let velRotX = 0, velRotY = 0;
@@ -166,6 +179,29 @@
       let animTargetRotX, animTargetRotY;
       let animProgress = 0;
       let animTargetBox = null;
+
+      function buildTooltipHtml(person) {
+        let html = '<div style="max-width:400px;overflow-y:auto;">';
+        html += '<div style="font-size:16px;font-weight:bold;margin-bottom:6px;">' + escapeHtml(person.name) + '</div>';
+        html += '<div style="margin-bottom:4px;"><b>Year:</b> ' + escapeHtml(person.year) + '</div>';
+        html += '<div style="margin-bottom:4px;"><b>Age:</b> ' + escapeHtml(person.age) + '</div>';
+        html += '<div style="margin-bottom:4px;"><b>Title:</b> ' + escapeHtml(person.title) + '</div>';
+        html += '<div style="margin-bottom:4px;"><b>Company:</b> ' + escapeHtml(person.company) + '</div>';
+        html += '<div style="margin-bottom:4px;"><b>Category:</b> ' + escapeHtml(person.category) + '</div>';
+        if (person.description) {
+          html += '<div style="margin-bottom:4px;"><b>Description:</b> ' + escapeHtml(person.description) + '</div>';
+        }
+        let fraudVal = person.fraud || 'N/A';
+        let color = fraudVal === 'N/A' ? '#50cd32' : '#ff6b6b';
+        html += '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.2);color:' + color + ';"><b>Fraud:</b> ' + escapeHtml(fraudVal) + '</div>';
+        html += '</div>';
+        return html;
+      }
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+      }
 
       function setup() {
         createCanvas(windowWidth, windowHeight, WEBGL);
@@ -213,9 +249,33 @@
 	camRotX = asin(600 / camDist);
 	camRotY = atan2(800, 4000);
 
-	// Pre-compute box configs with world positions
+	// Create tooltip element
+	tooltipDiv = createDiv('');
+	tooltipDiv.style('position', 'fixed');
+	tooltipDiv.style('bottom', '8px');
+	tooltipDiv.style('right', '8px');
+	tooltipDiv.style('background', 'rgba(32, 8, 64, 0.9)');
+	tooltipDiv.style('color', 'white');
+	tooltipDiv.style('padding', '8px 12px');
+	tooltipDiv.style('border-radius', '6px 0 0 0');
+	tooltipDiv.style('font-family', '"Tomorrow", sans-serif');
+	tooltipDiv.style('font-size', '14px');
+	tooltipDiv.style('pointer-events', 'none');
+	tooltipDiv.style('display', 'none');
+	tooltipDiv.style('z-index', '1000');
+
+	// Fetch JSON data and build sphere
+	fetch("/file.json")
+	  .then(function(r) { return r.json(); })
+	  .then(function(data) {
+	    peopleData = data;
+	    buildSphere(data.length);
+	    dataLoaded = true;
+	  });
+      }
+
+      function buildSphere(maxBoxes) {
 	let numBoxes = 0;
-	const maxBoxes = 8215;
 	for (let offset = 0; offset <= 90 && numBoxes < maxBoxes; offset += 2) {
 	  let angles = [90 - offset];
 	  if (offset > 0) angles.push(90 + offset);
@@ -224,58 +284,41 @@
 	    let ringRadius = sin(zAngle);
 	    let step = ringRadius > 0.05 ? 3 / ringRadius : 60;
 	    for (let xAngle = 0; xAngle < 360 && numBoxes < maxBoxes; xAngle += step) {
-	      // Compute world position: rotateZ(zAngle) * rotateX(xAngle) * (0, 2000, 0)
 	      let r = 2000;
 	      let y1 = r * cos(xAngle);
 	      let z1 = r * sin(xAngle);
 	      let wx = -y1 * sin(zAngle);
 	      let wy = y1 * cos(zAngle);
 	      let wz = z1;
-	      boxConfigs.push({ zAngle, xAngle, boxNumber: numBoxes + 1, wx, wy, wz, isOdd: (numBoxes + 1) % 2 === 1 });
+	      let person = peopleData[numBoxes];
+	      let fraudVal = (person.fraud || '').trim();
+	      let isClean = (fraudVal === 'N/A' || fraudVal === '');
+	      boxConfigs.push({ zAngle, xAngle, boxNumber: numBoxes + 1, wx, wy, wz, isClean, idx: numBoxes });
 	      numBoxes++;
 	    }
 	  }
 	}
-
-	// Create tooltip element
-	tooltipDiv = createDiv('');
-	tooltipDiv.style('position', 'absolute');
-	tooltipDiv.style('background', 'rgba(32, 8, 64, 0.9)');
-	tooltipDiv.style('color', 'white');
-	tooltipDiv.style('padding', '8px 12px');
-	tooltipDiv.style('border-radius', '6px');
-	tooltipDiv.style('font-family', '"Tomorrow", sans-serif');
-	tooltipDiv.style('font-size', '14px');
-	tooltipDiv.style('pointer-events', 'none');
-	tooltipDiv.style('display', 'none');
-	tooltipDiv.style('z-index', '1000');
       }
 
       // Raycast from camera through click point, find closest box
       function handleBoxClick(eyeX, eyeY, eyeZ) {
-	// Build camera basis vectors
 	let fLen = sqrt(eyeX*eyeX + eyeY*eyeY + eyeZ*eyeZ);
-	let fx = -eyeX/fLen, fy = -eyeY/fLen, fz = -eyeZ/fLen; // forward (toward origin)
+	let fx = -eyeX/fLen, fy = -eyeY/fLen, fz = -eyeZ/fLen;
 
-	// right = cross(forward, worldUp(0,1,0)) = (-fz, 0, fx)
 	let rx = -fz, ry = 0, rz = fx;
 	let rLen = sqrt(rx*rx + rz*rz);
 	rx /= rLen; rz /= rLen;
 
-	// up = cross(right, forward)
 	let ux = ry*fz - rz*fy, uy = rz*fx - rx*fz, uz = rx*fy - ry*fx;
 	let uLen = sqrt(ux*ux + uy*uy + uz*uz);
 	ux /= uLen; uy /= uLen; uz /= uLen;
 
-	// Default p5.js FOV is 60 degrees
 	let halfTan = tan(30);
 	let aspect = width / height;
 
-	// Mouse position to NDC
 	let ndcX = (clickX - width / 2) / (width / 2);
 	let ndcY = (clickY - height / 2) / (height / 2);
 
-	// Ray direction
 	let dx = fx + rx * ndcX * halfTan * aspect + ux * ndcY * halfTan;
 	let dy = fy + uy * ndcY * halfTan;
 	let dz = fz + rz * ndcX * halfTan * aspect + uz * ndcY * halfTan;
@@ -287,16 +330,12 @@
 
 	for (let i = 0; i < boxConfigs.length; i++) {
 	  let cfg = boxConfigs[i];
-	  // Skip back-facing boxes (same culling as render loop)
 	  if (cfg.wx * (eyeX - cfg.wx) + cfg.wy * (eyeY - cfg.wy) + cfg.wz * (eyeZ - cfg.wz) <= 0) continue;
-	  // Vector from eye to box
 	  let tx = cfg.wx - eyeX;
 	  let ty = cfg.wy - eyeY;
 	  let tz = cfg.wz - eyeZ;
-	  // Project onto ray
 	  let t = tx*dx + ty*dy + tz*dz;
-	  if (t < 0) continue; // behind camera
-	  // Distance from box center to closest point on ray
+	  if (t < 0) continue;
 	  let cx = eyeX + dx*t - cfg.wx;
 	  let cy = eyeY + dy*t - cfg.wy;
 	  let cz = eyeZ + dz*t - cfg.wz;
@@ -309,9 +348,9 @@
 
 	if (closestBox && closestDistSq < 40*40) {
 	  selectedBox = closestBox.boxNumber;
-	  tooltipDiv.html('Box #' + closestBox.boxNumber);
+	  let person = peopleData[closestBox.idx];
+	  tooltipDiv.html(buildTooltipHtml(person));
 	  tooltipDiv.style('display', 'block');
-	  tooltipDiv.position(clickX + 15, clickY - 15);
 	} else {
 	  selectedBox = null;
 	  tooltipDiv.style('display', 'none');
@@ -321,6 +360,17 @@
       function draw() {
 	background(70,76,94);
 
+	if (!dataLoaded) {
+	  push();
+	  fill(255);
+	  noStroke();
+	  textAlign(CENTER, CENTER);
+	  textSize(20);
+	  text('Loading...', 0, 0);
+	  pop();
+	  return;
+	}
+
 	// Handle animation from search selection
 	if (isAnimating) {
 	  animProgress += 0.018;
@@ -329,13 +379,11 @@
 	    isAnimating = false;
 	    camRotX = animTargetRotX;
 	    camRotY = animTargetRotY;
-	    // Animation complete: select the box and show tooltip
 	    if (animTargetBox) {
 	      selectedBox = animTargetBox.boxNumber;
-	      tooltipDiv.html('Box #' + animTargetBox.boxNumber);
+	      let person = peopleData[animTargetBox.idx];
+	      tooltipDiv.html(buildTooltipHtml(person));
 	      tooltipDiv.style('display', 'block');
-	      // Position tooltip at center of screen with offset
-	      tooltipDiv.position(width / 2 + 20, height / 2 - 20);
 	    }
 	  } else {
 	    let t = easeInOutCubic(animProgress);
@@ -343,7 +391,6 @@
 	    camRotY = animStartRotY + (animTargetRotY - animStartRotY) * t;
 	  }
 	} else if (mouseIsPressed) {
-	  // Manual orbit control: drag to rotate
 	  isDragging = true;
 	  let mx = (mouseX - pmouseX) || 0;
 	  let my = (mouseY - pmouseY) || 0;
@@ -357,7 +404,6 @@
 	    tooltipDiv.style('display', 'none');
 	  }
 	} else if (isDragging || (abs(velRotX) > minVelocity || abs(velRotY) > minVelocity)) {
-	  // Momentum: continue rotation with friction after release
 	  isDragging = false;
 	  velRotX *= currentFriction;
 	  velRotY *= currentFriction;
@@ -368,23 +414,19 @@
 	  camRotX = constrain(camRotX, -89, 89);
 	}
 
-	// Compute camera position from orbit angles
 	let eyeX = camDist * sin(camRotY) * cos(camRotX);
 	let eyeY = -camDist * sin(camRotX);
 	let eyeZ = camDist * cos(camRotY) * cos(camRotX);
 	camera(eyeX, eyeY, eyeZ, 0, 0, 0, 0, 1, 0);
 
-	// Handle click via raycasting
 	if (clickPending) {
 	  clickPending = false;
 	  handleBoxClick(eyeX, eyeY, eyeZ);
 	}
 
-	// Draw all boxes with back-face culling
+	// Draw all faces
 	for (let i = 0; i < boxConfigs.length; i++) {
 	  let cfg = boxConfigs[i];
-	  // Back-face culling: skip faces whose outward normal points away from camera
-	  // Normal is (wx, wy, wz), view vector is (eyeX - wx, eyeY - wy, eyeZ - wz)
 	  if (cfg.wx * (eyeX - cfg.wx) + cfg.wy * (eyeY - cfg.wy) + cfg.wz * (eyeZ - cfg.wz) <= 0) continue;
 	  push();
 	  rotateZ(cfg.zAngle);
@@ -392,24 +434,23 @@
 	  translate(0, 2000, 0);
 	  rotateX(-90);
 	  let isSel = cfg.boxNumber === selectedBox;
-	  // Head
+	  // Head color: blue=selected, green=clean(N/A), orange=fraud
 	  if (isSel) { fill(0, 100, 255); stroke(0, 80, 200); }
-	  else if (cfg.isOdd) { fill(50, 205, 50); stroke(30, 170, 30); }
+	  else if (cfg.isClean) { fill(50, 205, 50); stroke(30, 170, 30); }
 	  else { fill(255, 165, 0); stroke(220, 130, 0); }
 	  model(headModel);
 	  // Eyes
 	  fill(20, 20, 20); stroke(0);
 	  model(eyesModel);
-	  // Mouth
+	  // Mouth: smile for clean, frown for fraud
 	  if (isSel) { fill(255, 255, 255); stroke(200); }
 	  else { fill(200, 30, 30); stroke(150, 20, 20); }
-	  model(cfg.isOdd ? smileModel : frownModel);
+	  model(cfg.isClean ? smileModel : frownModel);
 	  pop();
 	}
       }
 
       function mousePressed() {
-	// Cancel animation and momentum if user starts interacting
 	if (isAnimating) {
 	  isAnimating = false;
 	}
@@ -421,11 +462,9 @@
       }
 
       function mouseReleased() {
-	// Set friction based on drag distance: short drags coast less, long drags coast more
 	let dragDist = dist(pressX, pressY, mouseX, mouseY);
 	let t = constrain(map(dragDist, 20, 300, 0, 1), 0, 1);
 	currentFriction = lerp(frictionMin, frictionMax, t);
-	// Only treat as a click if the mouse didn't move (not a drag for orbit)
 	if (dragDist < 5) {
 	  clickPending = true;
 	  clickX = mouseX;
@@ -434,7 +473,6 @@
       }
 
       function touchMoved() {
-	// Prevent default scrolling so touch drags rotate the sphere
 	return false;
       }
 
@@ -445,7 +483,6 @@
       }
 
       function windowResized() {
-	// Resize the canvas to the new window dimensions
 	resizeCanvas(windowWidth, windowHeight);
       }
 
@@ -463,7 +500,6 @@
 	input.addEventListener('keydown', function(e) {
 	  if (e.key === 'Enter') {
 	    e.preventDefault();
-	    // Select the first result if available
 	    let firstItem = resultsDiv.querySelector('.search-result-item');
 	    if (firstItem) firstItem.click();
 	  }
@@ -479,7 +515,6 @@
 	  else performSearch(input.value.trim());
 	});
 
-	// Escape key clears highlighted box and tooltip
 	document.addEventListener('keydown', function(e) {
 	  if (e.key === 'Escape') {
 	    selectedBox = null;
@@ -487,14 +522,12 @@
 	  }
 	});
 
-	// Close results when clicking outside
 	document.addEventListener('mousedown', function(e) {
 	  if (!e.target.closest('#search-container')) {
 	    resultsDiv.style.display = 'none';
 	  }
 	});
 
-	// Prevent canvas interaction when typing in search
 	input.addEventListener('mousedown', function(e) { e.stopPropagation(); });
 	input.addEventListener('mouseup', function(e) { e.stopPropagation(); });
       }
@@ -503,30 +536,35 @@
 	let resultsDiv = document.getElementById('search-results');
 	resultsDiv.innerHTML = '';
 
-	if (!query) {
+	if (!query || !dataLoaded) {
 	  resultsDiv.style.display = 'none';
 	  return;
 	}
 
-	// Filter boxes whose boxNumber contains the query string
-	let matches = boxConfigs.filter(function(cfg) {
-	  return String(cfg.boxNumber).indexOf(query) !== -1;
-	});
+	let lowerQuery = query.toLowerCase();
 
-	// Prioritize exact matches, then startsWith, then contains
+	// Find matching boxConfigs by person name
+	let matches = [];
+	for (let i = 0; i < boxConfigs.length; i++) {
+	  let person = peopleData[boxConfigs[i].idx];
+	  if (person.name && person.name.toLowerCase().indexOf(lowerQuery) !== -1) {
+	    matches.push(boxConfigs[i]);
+	  }
+	}
+
+	// Sort: exact match first, then startsWith, then contains
 	matches.sort(function(a, b) {
-	  let aStr = String(a.boxNumber);
-	  let bStr = String(b.boxNumber);
-	  let aExact = aStr === query;
-	  let bExact = bStr === query;
+	  let aName = peopleData[a.idx].name.toLowerCase();
+	  let bName = peopleData[b.idx].name.toLowerCase();
+	  let aExact = aName === lowerQuery;
+	  let bExact = bName === lowerQuery;
 	  if (aExact !== bExact) return aExact ? -1 : 1;
-	  let aStarts = aStr.indexOf(query) === 0;
-	  let bStarts = bStr.indexOf(query) === 0;
+	  let aStarts = aName.indexOf(lowerQuery) === 0;
+	  let bStarts = bName.indexOf(lowerQuery) === 0;
 	  if (aStarts !== bStarts) return aStarts ? -1 : 1;
-	  return a.boxNumber - b.boxNumber;
+	  return aName.localeCompare(bName);
 	});
 
-	// Limit to 20 results
 	matches = matches.slice(0, 20);
 
 	if (matches.length === 0) {
@@ -536,13 +574,14 @@
 	}
 
 	matches.forEach(function(cfg) {
+	  let person = peopleData[cfg.idx];
 	  let item = document.createElement('div');
 	  item.className = 'search-result-item';
-	  item.textContent = 'Box #' + cfg.boxNumber;
+	  item.innerHTML = escapeHtml(person.name) + '<span class="search-result-year">' + escapeHtml(person.year) + '</span>';
 	  item.addEventListener('click', function() {
 	    selectSearchResult(cfg);
 	    resultsDiv.style.display = 'none';
-	    document.getElementById('search-input').value = String(cfg.boxNumber);
+	    document.getElementById('search-input').value = person.name;
 	  });
 	  resultsDiv.appendChild(item);
 	});
@@ -550,19 +589,14 @@
       }
 
       function selectSearchResult(cfg) {
-	// Compute target camera angles to center this box
-	// Box is at (wx, wy, wz) on sphere of radius 2000
-	// Camera should be opposite the box so the box is centered in view
 	let r = 2000;
 	animTargetRotX = asin(constrain(-cfg.wy / r, -1, 1));
 	animTargetRotX = constrain(animTargetRotX, -89, 89);
 	animTargetRotY = atan2(cfg.wx, cfg.wz);
 
-	// Handle angle wrapping: pick shortest path for camRotY
 	animStartRotX = camRotX;
 	animStartRotY = camRotY;
 
-	// Normalize angles so we take the short way around
 	let diffY = animTargetRotY - animStartRotY;
 	while (diffY > 180) diffY -= 360;
 	while (diffY < -180) diffY += 360;
@@ -572,12 +606,10 @@
 	animTargetBox = cfg;
 	isAnimating = true;
 
-	// Clear current selection during animation
 	selectedBox = null;
 	tooltipDiv.style('display', 'none');
       }
 
-      // Easing function: smooth ease-in-out
       function easeInOutCubic(t) {
 	return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
       }
@@ -591,7 +623,7 @@
     <div id="hint-text">Click and drag around!<br><span style="font-size: 14px; display: inline-block; margin-top: 6px;">Made by <a href="https://x.com/itisyev" target="_blank" style="color: white; text-decoration: underline;">Yev</a></span><br><button onclick="alert('This was made by scraping Forbes 30 under 30 winners and searching for known cases of fraud, lawsuits, or controversy.\n\nSome were done humorously and some were done with people who may have common names.\n\nIf there is a change you would like to request, feel free to DM me on X @itisyev')" style="margin-top: 6px; font-size: 14px; font-family: 'Tomorrow', sans-serif; background: none; border: 1px solid white; color: white; padding: 4px 12px; cursor: pointer;">Disclaimer</button></div>
     <div id="search-container">
       <div id="search-bar">
-        <input id="search-input" type="text" placeholder="Search" autocomplete="off" />
+        <input id="search-input" type="text" placeholder="Search by name" autocomplete="off" />
         <button id="search-btn">Search</button>
       </div>
       <div id="search-results"></div>
