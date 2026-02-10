@@ -9,6 +9,9 @@ let camDist, camRotX, camRotY;
 let selectedBox = null;
 let dataLoaded = false;
 
+// Pinch-to-zoom state
+let lastPinchDist = null;
+
 // Momentum state for drag inertia
 let velRotX = 0, velRotY = 0;
 let isDragging = false;
@@ -325,8 +328,29 @@ function mouseReleased() {
   }
 }
 
+function touchStarted() {
+  if (touches.length === 2) {
+    lastPinchDist = dist(touches[0].x, touches[0].y, touches[1].x, touches[1].y);
+  }
+}
+
 function touchMoved() {
+  if (touches.length === 2 && selectedBox === null) {
+    let d = dist(touches[0].x, touches[0].y, touches[1].x, touches[1].y);
+    if (lastPinchDist !== null) {
+      let delta = lastPinchDist - d;
+      camDist += delta * 4;
+      camDist = constrain(camDist, 500, 10000);
+    }
+    lastPinchDist = d;
+    return false;
+  }
+  lastPinchDist = null;
   return false;
+}
+
+function touchEnded() {
+  lastPinchDist = null;
 }
 
 function mouseWheel(event) {
@@ -348,6 +372,10 @@ function initSearch() {
   let resultsDiv = document.getElementById('search-results');
 
   input.addEventListener('input', function() {
+    performSearch(this.value.trim());
+  });
+
+  input.addEventListener('focus', function() {
     performSearch(this.value.trim());
   });
 
@@ -391,34 +419,45 @@ function performSearch(query) {
   let resultsDiv = document.getElementById('search-results');
   resultsDiv.innerHTML = '';
 
-  if (!query || !dataLoaded) {
+  if (!dataLoaded) {
     resultsDiv.style.display = 'none';
     return;
   }
 
-  let lowerQuery = query.toLowerCase();
-
-  // Find matching boxConfigs by person name
   let matches = [];
-  for (let i = 0; i < boxConfigs.length; i++) {
-    let person = peopleData[boxConfigs[i].idx];
-    if (person.name && person.name.toLowerCase().indexOf(lowerQuery) !== -1) {
-      matches.push(boxConfigs[i]);
-    }
-  }
 
-  // Sort: exact match first, then startsWith, then contains
-  matches.sort(function(a, b) {
-    let aName = peopleData[a.idx].name.toLowerCase();
-    let bName = peopleData[b.idx].name.toLowerCase();
-    let aExact = aName === lowerQuery;
-    let bExact = bName === lowerQuery;
-    if (aExact !== bExact) return aExact ? -1 : 1;
-    let aStarts = aName.indexOf(lowerQuery) === 0;
-    let bStarts = bName.indexOf(lowerQuery) === 0;
-    if (aStarts !== bStarts) return aStarts ? -1 : 1;
-    return aName.localeCompare(bName);
-  });
+  if (!query) {
+    // Show all entries alphabetically when focused with empty input
+    matches = boxConfigs.slice();
+    matches.sort(function(a, b) {
+      let aName = (peopleData[a.idx].name || '').toLowerCase();
+      let bName = (peopleData[b.idx].name || '').toLowerCase();
+      return aName.localeCompare(bName);
+    });
+  } else {
+    let lowerQuery = query.toLowerCase();
+
+    // Find matching boxConfigs by person name
+    for (let i = 0; i < boxConfigs.length; i++) {
+      let person = peopleData[boxConfigs[i].idx];
+      if (person.name && person.name.toLowerCase().indexOf(lowerQuery) !== -1) {
+        matches.push(boxConfigs[i]);
+      }
+    }
+
+    // Sort: exact match first, then startsWith, then contains
+    matches.sort(function(a, b) {
+      let aName = peopleData[a.idx].name.toLowerCase();
+      let bName = peopleData[b.idx].name.toLowerCase();
+      let aExact = aName === lowerQuery;
+      let bExact = bName === lowerQuery;
+      if (aExact !== bExact) return aExact ? -1 : 1;
+      let aStarts = aName.indexOf(lowerQuery) === 0;
+      let bStarts = bName.indexOf(lowerQuery) === 0;
+      if (aStarts !== bStarts) return aStarts ? -1 : 1;
+      return aName.localeCompare(bName);
+    });
+  }
 
   matches = matches.slice(0, 20);
 
