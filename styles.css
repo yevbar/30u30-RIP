@@ -1,0 +1,143 @@
+html, body, main, main canvas {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#hint-text {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 2000;
+    color: white;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 20px;
+    pointer-events: auto;
+}
+
+#search-container {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Tomorrow", sans-serif;
+}
+
+#search-bar {
+    display: flex;
+    background: rgba(40, 44, 52, 0.92);
+    border: 1px solid white;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+#search-input {
+    width: 180px;
+    padding: 10px 14px;
+    border: none;
+    outline: none;
+    background: rgb(70, 76, 94);
+    color: white;
+    font-size: 14px;
+    font-family: "Tomorrow", sans-serif;
+}
+
+#search-input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+#search-btn {
+    padding: 10px 16px;
+    border: none;
+    border-left: 1px solid rgba(0, 200, 255, 0.3);
+    background: white;
+    color: rgb(70, 76, 94);
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Tomorrow", sans-serif;
+    transition: background 0.2s, color 0.2s;
+}
+
+#search-btn:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(70, 76, 94);
+}
+
+#search-results {
+    display: none;
+    margin-top: 4px;
+    background: rgba(40, 44, 52, 0.95);
+    border: 1px solid rgba(0, 200, 255, 0.6);
+    border-radius: 8px;
+    max-height: 240px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.search-result-item {
+    padding: 10px 14px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.search-result-item:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.search-result-item:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.search-result-item:only-child {
+    border-radius: 8px;
+}
+
+.search-result-item:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+#search-no-results {
+    padding: 10px 14px;
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+}
+
+.search-result-year {
+    color: rgba(255,255,255,0.45);
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+@media (max-width: 1000px) {
+    #hint-text {
+        font-size: 40px;
+    }
+    #hint-text span {
+        font-size: 28px !important;
+    }
+    #hint-text button {
+        font-size: 28px !important;
+    }
+    #search-input {
+        font-size: 28px;
+        width: 300px;
+    }
+    #search-btn {
+        font-size: 28px;
+    }
+    .search-result-item {
+        font-size: 28px;
+    }
+    .search-result-year {
+        font-size: 22px;
+    }
+    #search-no-results {
+        font-size: 28px;
+    }
+}
