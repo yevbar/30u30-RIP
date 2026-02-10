@@ -177,6 +177,7 @@
       let isAnimating = false;
       let animStartRotX, animStartRotY;
       let animTargetRotX, animTargetRotY;
+      let animStartDist, animTargetDist;
       let animProgress = 0;
       let animTargetBox = null;
 
@@ -382,6 +383,7 @@
 	    isAnimating = false;
 	    camRotX = animTargetRotX;
 	    camRotY = animTargetRotY;
+	    camDist = animTargetDist;
 	    if (animTargetBox) {
 	      selectedBox = animTargetBox.boxNumber;
 	      let person = peopleData[animTargetBox.idx];
@@ -393,6 +395,7 @@
 	    let t = easeInOutCubic(animProgress);
 	    camRotX = animStartRotX + (animTargetRotX - animStartRotX) * t;
 	    camRotY = animStartRotY + (animTargetRotY - animStartRotY) * t;
+	    camDist = animStartDist + (animTargetDist - animStartDist) * t;
 	  }
 	} else if (mouseIsPressed) {
 	  isDragging = true;
@@ -603,6 +606,8 @@
 
 	animStartRotX = camRotX;
 	animStartRotY = camRotY;
+	animStartDist = camDist;
+	animTargetDist = 2350;
 
 	let diffY = animTargetRotY - animStartRotY;
 	while (diffY > 180) diffY -= 360;
