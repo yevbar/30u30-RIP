@@ -151,6 +151,15 @@
       let camDist, camRotX, camRotY;
       let selectedBox = null;
 
+      // Momentum state for drag inertia
+      let velRotX = 0, velRotY = 0;
+      let isDragging = false;
+      const dragSensitivity = 0.3;
+      let currentFriction = 0.425;
+      const frictionMin = 0.375;
+      const frictionMax = 0.75;
+      const minVelocity = 0.01;
+
       // Animation state for search-based navigation
       let isAnimating = false;
       let animStartRotX, animStartRotY;
@@ -335,15 +344,28 @@
 	  }
 	} else if (mouseIsPressed) {
 	  // Manual orbit control: drag to rotate
+	  isDragging = true;
 	  let mx = (mouseX - pmouseX) || 0;
 	  let my = (mouseY - pmouseY) || 0;
-	  camRotY -= mx * 0.3;
-	  camRotX += my * 0.3;
+	  velRotY = -mx * dragSensitivity;
+	  velRotX = my * dragSensitivity;
+	  camRotY += velRotY;
+	  camRotX += velRotX;
 	  camRotX = constrain(camRotX, -89, 89);
 	  if ((mx !== 0 || my !== 0) && selectedBox !== null) {
 	    selectedBox = null;
 	    tooltipDiv.style('display', 'none');
 	  }
+	} else if (isDragging || (abs(velRotX) > minVelocity || abs(velRotY) > minVelocity)) {
+	  // Momentum: continue rotation with friction after release
+	  isDragging = false;
+	  velRotX *= currentFriction;
+	  velRotY *= currentFriction;
+	  if (abs(velRotX) < minVelocity) velRotX = 0;
+	  if (abs(velRotY) < minVelocity) velRotY = 0;
+	  camRotY += velRotY;
+	  camRotX += velRotX;
+	  camRotX = constrain(camRotX, -89, 89);
 	}
 
 	// Compute camera position from orbit angles
@@ -387,17 +409,24 @@
       }
 
       function mousePressed() {
-	// Cancel animation if user starts interacting
+	// Cancel animation and momentum if user starts interacting
 	if (isAnimating) {
 	  isAnimating = false;
 	}
+	velRotX = 0;
+	velRotY = 0;
+	isDragging = false;
 	pressX = mouseX;
 	pressY = mouseY;
       }
 
       function mouseReleased() {
+	// Set friction based on drag distance: short drags coast less, long drags coast more
+	let dragDist = dist(pressX, pressY, mouseX, mouseY);
+	let t = constrain(map(dragDist, 20, 300, 0, 1), 0, 1);
+	currentFriction = lerp(frictionMin, frictionMax, t);
 	// Only treat as a click if the mouse didn't move (not a drag for orbit)
-	if (dist(pressX, pressY, mouseX, mouseY) < 5) {
+	if (dragDist < 5) {
 	  clickPending = true;
 	  clickX = mouseX;
 	  clickY = mouseY;
