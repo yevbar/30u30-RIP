@@ -76,13 +76,20 @@ def run():
                     "fraud": "N/A"
                 }
             else:
-                confirm_response = client.models.generate_content(
-                    model="gemini-2.5-flash-lite",
-                    contents="Answer with either YES or NO - does the below text describe a true positive controversy? Answer no if it says there is no controvery\n\n" + response.text,
-                    config=empty_config
-                )
+                try:
+                    confirm_response = client.models.generate_content(
+                        model="gemini-2.5-flash-lite",
+                        contents="Answer with either YES or NO - does the below text describe a true positive controversy? Answer no if it says there is no controvery\n\n" + response.text,
+                        config=empty_config
+                    )
+                except:
+                    confirm_response = client.models.generate_content(
+                        model="gemini-3-flash-preview",
+                        contents="Answer with either YES or NO - does the below text describe a true positive controversy? Answer no if it says there is no controvery\n\n" + response.text,
+                        config=empty_config
+                    )
 
-                if confirm_response is None:
+                if confirm_response is None or confirm_response.text is None:
                     print()
                     print("GOT BACK NONE FOR CONFIRM RESPONSE")
                     print()
