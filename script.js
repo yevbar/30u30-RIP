@@ -113,6 +113,7 @@ function setup() {
   tooltipDiv.style('display', 'none');
   tooltipDiv.style('z-index', '1000');
   tooltipDiv.style('max-height', '600px');
+  tooltipDiv.id('tooltip');
 
   // Fetch JSON data and build sphere
   fetch("/file.json")
