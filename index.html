@@ -352,9 +352,11 @@
 	  let person = peopleData[closestBox.idx];
 	  tooltipDiv.html(buildTooltipHtml(person));
 	  tooltipDiv.style('display', 'block');
+	  tooltipDiv.style('pointer-events', 'auto');
 	} else {
 	  selectedBox = null;
 	  tooltipDiv.style('display', 'none');
+	  tooltipDiv.style('pointer-events', 'none');
 	}
       }
 
@@ -385,6 +387,7 @@
 	      let person = peopleData[animTargetBox.idx];
 	      tooltipDiv.html(buildTooltipHtml(person));
 	      tooltipDiv.style('display', 'block');
+	      tooltipDiv.style('pointer-events', 'auto');
 	    }
 	  } else {
 	    let t = easeInOutCubic(animProgress);
@@ -403,6 +406,7 @@
 	  if ((mx !== 0 || my !== 0) && selectedBox !== null) {
 	    selectedBox = null;
 	    tooltipDiv.style('display', 'none');
+	    tooltipDiv.style('pointer-events', 'none');
 	  }
 	} else if (isDragging || (abs(velRotX) > minVelocity || abs(velRotY) > minVelocity)) {
 	  isDragging = false;
@@ -478,6 +482,7 @@
       }
 
       function mouseWheel(event) {
+	if (selectedBox !== null) return;
 	camDist += event.delta * 2;
 	camDist = constrain(camDist, 500, 10000);
 	return false;
@@ -520,6 +525,7 @@
 	  if (e.key === 'Escape') {
 	    selectedBox = null;
 	    tooltipDiv.style('display', 'none');
+	    tooltipDiv.style('pointer-events', 'none');
 	  }
 	});
 
@@ -609,6 +615,7 @@
 
 	selectedBox = null;
 	tooltipDiv.style('display', 'none');
+	tooltipDiv.style('pointer-events', 'none');
       }
 
       function easeInOutCubic(t) {
