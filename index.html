@@ -181,7 +181,7 @@
       let animTargetBox = null;
 
       function buildTooltipHtml(person) {
-        let html = '<div style="max-width:400px;overflow-y:auto;">';
+        let html = '<div style="max-width:400px;max-height:600px;overflow-y:auto;">';
         html += '<div style="font-size:16px;font-weight:bold;margin-bottom:6px;">' + escapeHtml(person.name) + '</div>';
         html += '<div style="margin-bottom:4px;"><b>Year:</b> ' + escapeHtml(person.year) + '</div>';
         html += '<div style="margin-bottom:4px;"><b>Age:</b> ' + escapeHtml(person.age) + '</div>';
@@ -193,7 +193,7 @@
         }
         let fraudVal = person.fraud || 'N/A';
         let color = fraudVal === 'N/A' ? '#50cd32' : '#ff6b6b';
-        html += '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.2);color:' + color + ';"><b>Fraud:</b> ' + escapeHtml(fraudVal) + '</div>';
+        html += '<div style="margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.2);color:' + color + ';"><b>Fraud:</b> ' + marked.parse(fraudVal) + '</div>';
         html += '</div>';
         return html;
       }
@@ -263,6 +263,7 @@
 	tooltipDiv.style('pointer-events', 'none');
 	tooltipDiv.style('display', 'none');
 	tooltipDiv.style('z-index', '1000');
+	tooltipDiv.style('max-height', '600px');
 
 	// Fetch JSON data and build sphere
 	fetch("/file.json")
