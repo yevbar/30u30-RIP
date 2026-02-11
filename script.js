@@ -333,6 +333,16 @@ function touchStarted() {
   if (touches.length === 2) {
     lastPinchDist = dist(touches[0].x, touches[0].y, touches[1].x, touches[1].y);
   }
+  if (touches.length === 1) {
+    if (isAnimating) {
+      isAnimating = false;
+    }
+    velRotX = 0;
+    velRotY = 0;
+    isDragging = false;
+    pressX = mouseX;
+    pressY = mouseY;
+  }
 }
 
 function touchMoved() {
@@ -352,6 +362,16 @@ function touchMoved() {
 
 function touchEnded() {
   lastPinchDist = null;
+  if (touches.length === 0) {
+    let dragDist = dist(pressX, pressY, mouseX, mouseY);
+    let t = constrain(map(dragDist, 20, 300, 0, 1), 0, 1);
+    currentFriction = lerp(frictionMin, frictionMax, t);
+    if (dragDist < 10) {
+      clickPending = true;
+      clickX = mouseX;
+      clickY = mouseY;
+    }
+  }
 }
 
 function mouseWheel(event) {
